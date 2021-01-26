@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "AvenirBold";
+  src: url("./AvenirNextLTPro-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("./AvenirNextLTPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirRegular-500";
+  src: url("./AvenirNextLTPro-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirRegular-600";
+  src: url("./AvenirNextLTPro-Regular.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LoraRegular";
+  src: url("./static/Lora-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LoraBold";
+  src: url("./static/Lora-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
