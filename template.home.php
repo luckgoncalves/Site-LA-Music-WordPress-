@@ -219,7 +219,7 @@ $queryParceiros = new WP_Query($args);
 
       <div class="py-5">
         <h2 class="text-white mb-5 text-center text-sm-left avenirBold ">Estes são alguns clientes da casa</h2>
-        <a href="/clientes" class="bt bg-red avenirRegular-500">Veja a lista completa de clientes</a>
+        <a href="/clientes" class="bt bg-red desktop avenirRegular-500">Veja a lista completa de clientes</a>
       </div>
 
       <div class="d-flex justify-content-center clients">
@@ -237,105 +237,60 @@ $queryParceiros = new WP_Query($args);
         <?php endif;?>
       </div>
 
-      <!-- <div class="d-block d-sm-none text-center col-12 mt-5 mt-sm-0">
-        <a href="/clientes" class="bt bg-red avenirRegular-500">Veja a lista completa de clientes</a>
-      </div> -->
+      <div class="text-center mobile col-12 my-5">
+        <a href="/clientes" class="bt bg-red avenirRegular-500  mx-auto">Veja a lista completa de clientes</a>
+      </div>
     
     </div>
   </section>
 
-<section id="home-parceiros" class="d-flex justify-content-center">
-  <div class="mx-0 divParceiros mx-sm-5 p-5 text-center" style="border-radius:4px;background-image:url('<?= $base_url?>/assets/img/bg-parceiros.png'); background-color: #F7F7F7; z-index:10;">
-      <h2 class="mb-4 f30 avenirRegular-500">Nossos parceiros nessa jornada</h2>
-      <div class="d-none d-sm-block carousel">
-        <?php if ($queryParceiros->have_posts()) {
-            while ($queryParceiros->have_posts()) {
-              $queryParceiros->the_post(); ?>
-                <div class="d-flex justify-content-center">
-                  <div class="d-flex align-items-center justify-content-center" style="width:115px!important; height:115px; border-radius:50%; border: 2px solid #EAB41F;">
-                    <img class="img-fluid" src="<?= the_post_thumbnail_url()?>" alt="<?= get_the_title();?>" />
+  <section id="home-parceiros" class="d-flex justify-content-center">
+    <div class="mx-0 divParceiros  p-5 text-center" style="border-radius:4px;background-image:url('<?= $base_url?>/assets/img/bg-parceiros.png'); background-color: #F7F7F7; z-index:10;">
+        <h2 class="mb-4 f30 avenirRegular-500">Nossos parceiros nessa jornada</h2>
+        <div class="d-none d-sm-block carousel">
+          <?php if ($queryParceiros->have_posts()) {
+              while ($queryParceiros->have_posts()) {
+                $queryParceiros->the_post(); ?>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center" style="width:115px!important; height:115px; border-radius:50%; border: 2px solid #EAB41F;">
+                      <img class="img-fluid" src="<?= the_post_thumbnail_url()?>" alt="<?= get_the_title();?>" />
+                    </div>
                   </div>
-                </div>
-            <?php }
-          }?>
-        </div>
-      <div class="d-block d-sm-none  carouselMobile">
-        <?php if ($queryParceiros->have_posts()) {
-            while ($queryParceiros->have_posts()) {
-              $queryParceiros->the_post(); ?>
-                <div class="d-flex justify-content-center">
-                  <div class="d-flex align-items-center justify-content-center" style="width:115px!important; height:115px; border-radius:50%; border: 2px solid #EAB41F;">
-                    <img class="img-fluid" src="<?= the_post_thumbnail_url()?>" alt="<?= get_the_title();?>" />
+              <?php }
+            }?>
+          </div>
+        <div class="d-block d-sm-none  carouselMobile">
+          <?php if ($queryParceiros->have_posts()) {
+              while ($queryParceiros->have_posts()) {
+                $queryParceiros->the_post(); ?>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center" style="width:115px!important; height:115px; border-radius:50%; border: 2px solid #EAB41F;">
+                      <img class="img-fluid" src="<?= the_post_thumbnail_url()?>" alt="<?= get_the_title();?>" />
+                    </div>
                   </div>
-                </div>
-            <?php }
-          }?>
+              <?php }
+            }?>
+          </div>
         </div>
-      </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-
-<section id="home-contato" >
-  <div class="d-flex justify-content-center align-items-center flex-column px-3 pb-0 pt-5 pb-sm-5" style="background-image: url('<?= $base_url?>/assets/img/18.png'); background-repeat:no-repeat; background-size: cover">
-    <img id="home-contato-logo" class="img-fluid d-none d-sm-block m-auto  pt-5" src="<?= $base_url?>/assets/img/logo-la_music.png" />
-    <div class="card mt-3">
-      <div class="card-header pt-5">
-        <p class="card-text mb-0 f26 avenirRegular">Seja muito bem-vindo</p>
-        <h3 class="f26 avenirBold">Vamos trocar uma ideia ?</h3>
-      </div>
-      <div class="card-body p-3" style="position:relative; background-color: #fff">
-        <?= do_shortcode( '[contact-form-7 id="15" title="contato"]' ); ?>
+  <section id="home-contato" >
+    <div class="px-3 pb-0 pt-5 pb-sm-5">
+      <img id="home-contato-logo" class="img-fluid d-none d-sm-block m-auto  pt-5" src="/wp-content/themes/la_music/assets/img/logo-la_music.png" />
+      <div class="card mt-3">
+        <div class="card-header pt-5">
+          <p class="card-text mb-0 f26 avenirRegular">Seja muito bem-vindo</p>
+          <h3 class="f26 avenirBold">Vamos trocar uma ideia ?</h3>
+        </div>
+        <div class="card-body p-3">
+          <?= do_shortcode( '[contact-form-7 id="15" title="contato"]' ); ?>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
-<script>
-  let width = $(window).width();
-  if(width >= 1000 ){
-    function sectionClient(){
-      // let heightMic = $('#img-mic').height();
-      // let widthMic  = ($('#img-mic').width() - 95);
-      
-
-      let heigthParceiros = ($('#home-parceiros').height() / 2) + 10;
-
-      $('#home-parceiros').attr("style", "margin-top: -"+heigthParceiros+'px')
-      $('#home-contato').attr("style", "margin-top: -"+heigthParceiros+'px')
-      $('#home-contato-logo').attr("style", "margin-top: "+heigthParceiros+'px !important')
-    }
-  }
-  window.addEventListener ("load", sectionClient)
-
-  $(window).on('resize', function() {
-    if ($(this).width() < 767) {
-      // let heightMic = $('#img-mic').height();
-      // let widthMic  = ($('#img-mic').width('1--'));
-      
-      // $('#home-clientes').height();
-
-      let heigthParceiros = ($('#home-parceiros').height() / 2) + 10;
-
-      $('#home-parceiros').attr("style", "margin-top:unset")
-      $('#home-contato').attr("style", "margin-top:0px")
-      $('#home-contato-logo').attr("style", "margin-top: 0px")
-    }else{
-      // let heightMic = $('#img-mic').height();
-      // let widthMic  = ($('#img-mic').width() - 95);
-      
-      // $('#home-clientes').height(heightMic+'px');
-
-      let heigthParceiros = ($('#home-parceiros').height() / 2) + 10;
-
-      $('#home-parceiros').attr("style", "margin-top: -"+heigthParceiros+'px')
-      $('#home-contato').attr("style", "margin-top: -"+heigthParceiros+'px')
-      $('#home-contato-logo').attr("style", "margin-top: "+heigthParceiros+'px !important')
-    }
-  })
-
-</script>
 
 <script>
   let time = 7000,
@@ -349,6 +304,7 @@ $queryParceiros = new WP_Query($args);
     // section[2].classList.remove("selected")
     section[slid].classList.add("selected")
   }
+
   function nexSlider(slid){
     section[currentSliderIndex].classList.remove("selected")
     currentSliderIndex++;

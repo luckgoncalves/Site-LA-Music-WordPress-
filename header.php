@@ -62,6 +62,8 @@ $pageId     = $wp_query->post->ID;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/home.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/main.css" />
     <title><?php wp_title( '| ', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
     <!-- Global site tag (gtag.js) - Google Analytics -->

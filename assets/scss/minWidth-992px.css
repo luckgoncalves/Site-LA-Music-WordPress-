@@ -188,34 +188,6 @@ body header .nav-mobile {
   display: none;
 }
 
-#home-depoimento .infoautor h3 {
-  color: #7E7E7E;
-}
-
-#home-parceiros .divParceiros {
-  width: 80%;
-}
-
-#home-clientes .btChamada {
-  width: 180px;
-}
-
-#home-contato .card {
-  border-radius: 0;
-}
-
-#home-contato .card .card-header {
-  text-align: center;
-}
-
-#solucoes-home {
-  height: 100vh;
-}
-
-#solucoes-info {
-  height: 100%;
-}
-
 .scrollActive {
   overflow-x: auto;
   padding-bottom: 1em;
