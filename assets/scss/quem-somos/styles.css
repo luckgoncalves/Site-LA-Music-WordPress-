@@ -1,47 +1,262 @@
 @import url("../global/styles.css");
 #quem-somos #quemSomos-topo {
-  padding-top: 140px;
   background-color: var(--primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media (min-width: 1000px) {
+  #quem-somos #quemSomos-topo {
+    padding-top: 140px;
+    padding-right: 0;
+  }
 }
 
 #quem-somos #quemSomos-topo > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#quem-somos #quemSomos-topo > div div:nth-child(1) {
-  width: 40%;
-  margin-right: 1.5rem;
+#quem-somos #quemSomos-topo > div > div:nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#quem-somos #quemSomos-topo > div div:nth-child(1) p {
-  width: 537px;
+@media (min-width: 900px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(1) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 40%;
+    margin-right: 3.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(1) {
+    margin-left: 3.5rem;
+  }
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(1) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 3rem;
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(1) div > img {
+  width: 520px;
   max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 700px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(1) div {
+    display: none;
+  }
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(1) h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 700px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(1) h1 {
+    margin-right: auto;
+  }
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(1) p {
+  max-width: 100%;
+  margin-right: auto;
   margin-bottom: 1.5rem;
   font-size: 16px;
   font-weight: 500;
   line-height: 19.2px;
 }
 
-#quem-somos #quemSomos-topo > div div:nth-child(2) {
+@media (min-width: 900px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(1) p {
+    width: 537px;
+  }
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(2) {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-bottom: -2%;
 }
 
-#quem-somos #quemSomos-topo > div div:nth-child(2) img {
+@media (min-width: 900px) {
+  #quem-somos #quemSomos-topo > div > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#quem-somos #quemSomos-topo > div > div:nth-child(2) img {
   margin-top: auto;
   margin-left: auto;
-  height: 538px;
   max-height: 100%;
   max-width: 100%;
+}
+
+#quem-somos #quemSomos-equipe {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 58px auto 0;
+  padding: 0 1.5rem;
+}
+
+#quem-somos #quemSomos-equipe h1 {
+  font-size: 31.2px;
+}
+
+@media (min-width: 1000px) {
+  #quem-somos #quemSomos-equipe h1 {
+    font-size: 45px;
+  }
+}
+
+#quem-somos #quemSomos-equipe > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  max-width: 100%;
+  margin: auto auto 3rem;
+}
+
+@media (min-width: 800px) {
+  #quem-somos #quemSomos-equipe > div {
+    margin: 0 3rem 3rem;
+    width: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
+
+#quem-somos #quemSomos-equipe > div .foto {
+  min-height: 278px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#quem-somos #quemSomos-equipe > div .foto img {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  #quem-somos #quemSomos-equipe > div .foto {
+    margin-right: 30px;
+    width: 258px;
+  }
+}
+
+#quem-somos #quemSomos-equipe > div .info-equipe {
+  margin-bottom: 34px;
+}
+
+@media (min-width: 800px) {
+  #quem-somos #quemSomos-equipe > div .info-equipe {
+    width: 500px;
+    margin-right: 65px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #quem-somos #quemSomos-equipe > div .info-equipe {
+    margin-right: 100px;
+  }
+}
+
+#quem-somos #quemSomos-equipe > div .info-equipe h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+#quem-somos #quemSomos-equipe > div .info-equipe h4 {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--red);
+}
+
+@media (min-width: 1000px) {
+  #quem-somos #quemSomos-equipe > div .info-equipe h4 {
+    margin-top: 9px;
+    margin-bottom: 21px;
+  }
+}
+
+#quem-somos #quemSomos-equipe > div .info-equipe p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+#quem-somos #quemSomos-equipe > div .sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  #quem-somos #quemSomos-equipe > div .sociais {
+    width: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #quem-somos #quemSomos-equipe > div .sociais img {
+    margin-bottom: 24px;
+  }
+  #quem-somos #quemSomos-equipe > div .sociais img:nth-last-child(4) {
+    margin-bottom: 0 !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
