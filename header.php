@@ -25,7 +25,6 @@ $pageId     = $wp_query->post->ID;
     <meta property="og:site_name" content="LA Music">
     <meta property="og:url" content="<?php the_permalink(); ?>" />
 
-    <!-- <meta property="og:image" content="<?= $base_url?>/assets/img/logo-la_music.png"> -->
     <meta property="og:image" content="<?= get_the_post_thumbnail_url(get_the_ID(), 'blog_list')?>">
 
     <?php if ($post->ID !== 328) { ?>
@@ -63,18 +62,24 @@ $pageId     = $wp_query->post->ID;
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/home.css" />
-    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/main.css" />
-    <title><?php wp_title( '| ', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143795586-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/global/styles.css" />
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/home/styles.css" />
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/quem-somos/styles.css" />
+    <!-- MAIN CSS -->
 
-  gtag('config', 'UA-143795586-1');
-</script>
+
+    <title><?php wp_title( '| ', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
+   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143795586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143795586-1');
+    </script>
 
 <body style="background-color: #E5E5E5;">
   <header class="header-menu w-100" style="position:fixed;z-index:9999">
