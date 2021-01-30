@@ -259,4 +259,58 @@
     margin-bottom: 0 !important;
   }
 }
+
+#quem-somos #missao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+}
+
+#quem-somos #missao > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 635px;
+  max-width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+#quem-somos #missao > div h2 {
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 39.6px;
+}
+
+#quem-somos #missao > div h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.2px;
+}
+
+#quem-somos #missao > div p {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+}
+
+#quem-somos #missao > div p span {
+  font-weight: 700;
+}
+
+#quem-somos #home-contato {
+  margin-top: -2px;
+}
 /*# sourceMappingURL=styles.css.map */

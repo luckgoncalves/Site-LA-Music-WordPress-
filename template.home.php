@@ -19,14 +19,6 @@ $args = array(
 );
 $queryClientes = new WP_Query($args);
 
-// $args = array(
-//   'post_type' => 'clientes',
-//   'orderby' => 'menu_order',
-//   'order' => 'ASC',
-//   'posts_per_page' => 3,
-// );
-// $queryClientesMobile = new WP_Query($args);
-
 $args = array(
   'post_type' => 'testemunho',
   'orderby' => 'menu_order',

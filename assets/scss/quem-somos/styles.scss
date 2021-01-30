@@ -210,4 +210,49 @@
         }
     }
 
+    #missao {
+        display: flex;
+        padding: 3rem;
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 635px;
+            max-width: 100%;
+
+            margin: auto;
+            height: 100%;
+
+            h2 {
+                font-size: 33px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 39.6px;
+                
+            }
+
+            h3 {
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 31.2px;
+            }
+
+           p {
+               font-size: 16px;
+               line-height: 19.2px;
+                font-weight: 400;
+
+               span {
+                   font-weight: 700;
+               }
+           }
+        }
+    }
+
+    #home-contato {
+        margin-top: -2px;
+    }
+
 }

@@ -1,0 +1,181 @@
+@import url("../global/styles.css");
+#clientes #home-clientes {
+  background-color: var(--blue);
+  padding-top: 3rem;
+  min-height: 450px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -1px;
+}
+
+@media (min-width: 981px) {
+  #clientes #home-clientes {
+    padding-top: 140px;
+  }
+}
+
+#clientes #home-clientes #img-mic {
+  display: none;
+}
+
+@media (min-width: 880px) {
+  #clientes #home-clientes #img-mic {
+    display: block;
+  }
+}
+
+#clientes #home-clientes #divClientes {
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80% !important;
+}
+
+#clientes #home-clientes #divClientes > div:nth-child(1) {
+  width: 550px;
+  max-width: 100%;
+}
+
+#clientes #home-clientes #divClientes > div:nth-child(1) h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 5px !important;
+}
+
+@media (min-width: 485px) and (max-width: 879px) {
+  #clientes #home-clientes #divClientes > div:nth-child(1) h2 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 880px) {
+  #clientes #home-clientes #divClientes > div:nth-child(1) h2 {
+    text-align: left;
+    font-size: 30px;
+  }
+}
+
+#clientes #home-clientes #divClientes > div:nth-child(1) a {
+  margin: auto;
+  width: 100%;
+  display: none;
+}
+
+@media (min-width: 880px) {
+  #clientes #home-clientes #divClientes > div:nth-child(1) {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    width: 288px;
+  }
+  #clientes #home-clientes #divClientes > div:nth-child(1) a {
+    margin: initial;
+    width: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#clientes #home-clientes #divClientes > div:nth-child(3) {
+  width: 288px;
+}
+
+#clientes #home-clientes #divClientes > div:nth-child(3) a {
+  width: 100%;
+}
+
+#clientes #home-clientes #divClientes .clients {
+  height: 195px;
+  display: none;
+}
+
+#clientes #home-clientes #divClientes .clients div:nth-last-child(-n+3) {
+  display: none !important;
+}
+
+@media (min-width: 880px) {
+  #clientes #home-clientes #divClientes .clients {
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #clientes #home-clientes #divClientes .clients div:nth-last-child(-n+3) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+#clientes #home-clientes #divClientes .clients div {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+#clientes #home-clientes #divClientes .clients div:nth-child(2n+2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#clientes #home-clientes #divClientes .button-2 {
+  display: block;
+}
+
+@media (min-width: 880px) {
+  #clientes #home-clientes #divClientes {
+    margin: 4rem auto auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #clientes #home-clientes #divClientes .button-2 {
+    display: none;
+  }
+}
+
+#clientes #home-clientes #flechas {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#clientes #clientes-clientes {
+  background-color: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#clientes #clientes-clientes div ul {
+  list-style: none;
+  text-align: center;
+}
+
+#clientes #clientes-clientes div ul li {
+  font-size: 22px;
+  color: var(--white);
+}
+
+@media (min-width: 880px) {
+  #clientes #clientes-clientes div ul li {
+    font-size: 35px;
+  }
+}
+
+#clientes #home-contato {
+  margin-top: -2px;
+}
+/*# sourceMappingURL=styles.css.map */
