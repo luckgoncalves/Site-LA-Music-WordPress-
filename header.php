@@ -67,6 +67,7 @@ $pageId     = $wp_query->post->ID;
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/home/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/quem-somos/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/clientes/styles.css" />
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/contratos/styles.css" />
     <!-- MAIN CSS -->
 
 

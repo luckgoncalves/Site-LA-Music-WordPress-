@@ -1,0 +1,70 @@
+@import url("../global/styles.css");
+#contratos #home-contrato {
+  padding-top: 140px;
+  background-color: var(--primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contratos #home-contrato div {
+  padding: 0 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 741px;
+  max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+  #contratos #home-contrato div {
+    margin: 110px auto;
+  }
+}
+
+#contratos #home-contrato div h1 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+  #contratos #home-contrato div h1 {
+    font-size: 30px;
+  }
+}
+
+#contratos #home-contrato div p {
+  font-size: 16px;
+  line-height: 19.2px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 62px;
+}
+
+#contratos #home-contrato div .bt {
+  width: 265px;
+  max-width: 100%;
+}
+
+#contratos #home-contato {
+  margin-top: -2px;
+}
+/*# sourceMappingURL=styles.css.map */
