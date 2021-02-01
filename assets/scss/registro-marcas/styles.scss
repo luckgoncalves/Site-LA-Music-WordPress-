@@ -1,0 +1,103 @@
+@import url('../global/styles.css');
+
+#registro-marcas {
+    
+    #solucoes3-home {
+        display: flex;
+        align-items: center;
+
+
+        max-width: 100%;
+        
+        background-color: var(--primary);
+        // background-image: url('../../img/group34.png');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position-y: center;
+        
+        @media(min-width: 1000px) {
+            padding-top: 140px;
+        }
+        
+        div {
+            width: 392px;
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media(min-width:1000px) {
+                margin-left: 80px;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            h2 {
+                font-size: 30px;
+                line-height: 36px;
+                color: var(--white);
+            }
+
+            p {
+                color: var(--white);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;
+                margin: 40px auto 33px;
+            }
+
+            .bt {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #funcionamento {
+        background-color: var(--white);
+        z-index:-10;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin: 0 30px;
+
+            width: 741px;
+            max-width: 100%;
+
+            h2 {
+                font-size: 26px;
+                line-height: 31.2px;
+                letter-spacing: 0.365em;
+                text-transform: uppercase;
+                
+                margin-bottom: 24px;
+
+                text-align: center;
+            }
+
+            p {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26.4px;
+
+                text-align: center;
+
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    #home-contato {
+        margin-top: -2px;
+    }
+}

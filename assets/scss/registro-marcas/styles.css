@@ -1,0 +1,120 @@
+@import url("../global/styles.css");
+#registro-marcas #solucoes3-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  background-color: var(--primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+@media (min-width: 1000px) {
+  #registro-marcas #solucoes3-home {
+    padding-top: 140px;
+  }
+}
+
+#registro-marcas #solucoes3-home div {
+  width: 392px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  #registro-marcas #solucoes3-home div {
+    margin-left: 80px;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+#registro-marcas #solucoes3-home div h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--white);
+}
+
+#registro-marcas #solucoes3-home div p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  margin: 40px auto 33px;
+}
+
+#registro-marcas #solucoes3-home div .bt {
+  font-size: 14px;
+}
+
+#registro-marcas #funcionamento {
+  background-color: var(--white);
+  z-index: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#registro-marcas #funcionamento div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 30px;
+  width: 741px;
+  max-width: 100%;
+}
+
+#registro-marcas #funcionamento div h2 {
+  font-size: 26px;
+  line-height: 31.2px;
+  letter-spacing: 0.365em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#registro-marcas #funcionamento div p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#registro-marcas #home-contato {
+  margin-top: -2px;
+}
+/*# sourceMappingURL=styles.css.map */
