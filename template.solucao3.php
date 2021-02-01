@@ -1,12 +1,10 @@
 <?php
-/*
-Template Name: Solucoes3
- */
-$base_url = esc_url(get_template_directory_uri());
-get_header(); 
+ /* Template Name: Solucoes3 */
+  $base_url = '/wp-content/themes/la_music/';
+  get_header(); 
 
-$get_fields = get_post_custom();
-$fields = get_fields();
+  $get_fields = get_post_custom();
+  $fields = get_fields();
 ?>
 <main id="registro-marcas">
   <section id="solucoes3-home">
@@ -21,7 +19,7 @@ $fields = get_fields();
     </div>
   </section>
 
-  <section id="funcionamento" style="position:relative;">
+  <section id="funcionamento">
     <div>
       <h2 class="avenirBold">Como funciona ?</h2>
       <p class="avenirRegular">O registro do nome artístico ou da banda como marca dá o direito de utilizar o nome com exclusividade e impede que outros músicos ganhem dinheiro em cima do seu trabalho sem autorização.</p>
@@ -29,16 +27,15 @@ $fields = get_fields();
     </div>
   </section>
 
-  <section style="background-color: #000; position:relative;">
-    <div class="row w-100 pl-sm-5 align-items-center ml-0">
-      <div class="d-flex d-sm-block flex-column flex-sm-row justify-content-center align-items-center py-5 py-sm-0 pl-sm-5 col-12 col-sm-5">
-        <h2 style="line-height:31px" class="text-white text-center text-sm-left avenirRegular-600 mb-3 f26">São as menores taxas do mercado para tornar esta proteção acessível ao músico em qualquer estágio de carreira. </h2>
-        <p class="avenirRegular-600 f14 text-center text-sm-left text-white">Contrate nosso serviço e garanta a proteção à sua marca.</p>
-        <a href="<?= get_field('link_garantir_protecao');?>" style="background-color:#FF2A2A; color: #fff; border-radius:0;height:48px;width:265px" class="f14 mt-3 btn avenirRegular-600 d-flex align-items-center justify-content-center">Garantir proteção</a>
-      </div>
-      <div class="col-7 d-none d-sm-block pr-0">
-        <img src="<?= $base_url?>/assets/img/bg-solucoes3.png" class="img-fluid d-block ml-auto" />
-      </div>
+  <section id="section-3">
+    <div>
+      <h2 style="line-height:31px" class="avenirRegular-600">São as menores taxas do mercado para tornar esta proteção acessível ao músico em qualquer estágio de carreira. </h2>
+      <p class="avenirRegular-600">Contrate nosso serviço e garanta a proteção à sua marca.</p>
+      <a href="<?= get_field('link_garantir_protecao');?>" class="bt avenirRegular-600 bg-red">Garantir proteção</a>
+    </div>
+
+    <div>
+      <img src="<?= $base_url?>/assets/img/bg-taxas.png" />
     </div>
   </section>
 
