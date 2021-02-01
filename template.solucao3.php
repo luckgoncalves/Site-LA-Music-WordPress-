@@ -39,37 +39,44 @@
     </div>
   </section>
 
-  <section class="px-0 px-sm-5 bg-white" style="position:relative">
+  <section id="steps-process" class="bg-white">
     <div class="d-flex flex-column align-items-center justify-content-center p-5">
-      <div class="d-flex flex-column align-items-center">
-        <h5 style="color: #040404;" class="avenirRegular-600 text-center text-sm-left f23 text-uppercase">Como funciona o processo</h5>
-        <div style="background-color:#FF2A2A; border-radius:4px; height:3px; width:30%;"></div>
+
+      <div class="header">
+        <h5 class="avenirRegular-600">Como funciona o processo</h5>
+        <div class="separator bg-red" ></div>
       </div>
-      <div class="row w-100 mt-5">
-        <div class="col-12 col-sm-3 d-flex flex-column align-items-center justify-content-center ">
-          <div class="d-flex align-items-center" style="height:140px; width:100px">
-            <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/pesquisa.png" />
+
+      <div class="steps">
+        
+        <div class="step ">
+          <div class="d-flex align-items-center">
+            <img class="d-block mx-auto" src="<?= $base_url?>/assets/img/pesquisa.png" />
           </div>
-          <p style=" color: #000408" class="avenirRegular-600 f16 text-center">Pesquisa de viabilidade</p>
+          <p class="avenirRegular-600">Pesquisa de viabilidade</p>
         </div>
-        <div class="col-12 col-sm-3 d-flex flex-column align-items-center justify-content-center">
-          <div class="d-flex align-items-center" style="height:140px; width:100px">
-            <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/tel-registro.png" />
+      
+        <div class="step">
+          <div class="d-flex align-items-center">
+            <img class="d-block mx-auto" src="<?= $base_url?>/assets/img/tel-registro.png" />
           </div>
-          <p style=" color: #000408" class="avenirRegular-600 f16 text-center">Solicitação de registro ao INPI</p>
+          <p class="avenirRegular-600">Solicitação de registro ao INPI</p>
         </div>
-        <div class="col-12 col-sm-3 d-flex flex-column align-items-center justify-content-center">
-          <div class="d-flex align-items-center" style="height:140px; width:100px">
-            <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/acompanhamento.png" />
+      
+        <div class="step">
+          <div class="d-flex align-items-center">
+            <img class="d-block mx-auto" src="<?= $base_url?>/assets/img/acompanhamento.png" />
           </div>
-          <p style=" color: #000408" class="avenirRegular-600 f16 text-center">Acompanhamento do processo</p>
+          <p class="avenirRegular-600">Acompanhamento do processo</p>
         </div>
-        <div class="col-12 col-sm-3 d-flex flex-column align-items-center justify-content-center">
-          <div class="d-flex align-items-center" style="height:140px; width:100px">
-            <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/calendar.png" />
+      
+        <div class="step">
+          <div class="d-flex align-items-center">
+            <img class="d-block mx-auto" src="<?= $base_url?>/assets/img/calendar.png" />
           </div>
-          <p style=" color: #000408" class="avenirRegular-600 f16 text-center">Recurso administrativo</p>
+          <p class="avenirRegular-600">Recurso administrativo</p>
         </div>
+        
       </div>
     </div>
   </section>

@@ -1,0 +1,63 @@
+@import url("../global/styles.css");
+#direitos-autorais #admin-autoral {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral {
+    padding-top: 140px;
+  }
+}
+
+#direitos-autorais #admin-autoral > div {
+  margin-right: auto;
+  margin-left: 80px;
+  width: 456px;
+  max-width: 100%;
+}
+
+#direitos-autorais #admin-autoral > div h2 {
+  font-size: 22px;
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 18px;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral > div h2 {
+    text-align: left;
+  }
+}
+
+#direitos-autorais #admin-autoral > div h1 {
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral > div h1 {
+    text-align: left;
+  }
+}
+
+#direitos-autorais #admin-autoral > div .bt {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+/*# sourceMappingURL=styles.css.map */
