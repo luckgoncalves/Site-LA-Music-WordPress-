@@ -11,30 +11,26 @@
 <main id="direitos-autorais">
 
   <section id="admin-autoral" style="background-image: url('<?= the_post_thumbnail_url()?>');">
-    <!-- <div class="row w-100 mt-5 pt-5 align-items-center"> -->
+  
       <div>
         <h2 class="avenirRegular-600">Administração Autoral</h2>
         <h1 class="avenirRegular-600">Você só recebe Direitos Autorais com suas músicas cadastradas no ECAD.</h1>
         <a href="#home-contato" class="bt bg-red avenirRegular-600"> Solicite a análise de seu repertório GRÁTIS!</a>
       </div>
 
-      <!-- <div class="col-7 d-none d-sm-block">
-        <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/la-solucao2.png"/>
-      </div> -->
-    <!-- </div> -->
+      <div class="">
+        <img class="img-fluid " src="<?= $base_url?>/assets/img/la-solucao2.png"/>
+      </div>
   </section>
 
-  <section id="solucoes-info" style="background-color: #000; position:relative; z-index:-10">
-    <img src="<?= $base_url?>/assets/img/bg-degrade92.png" style="position:absolute; top:0; width:100%; z-index:9999" />
-    
-    <div class="row w-100 py-5 pb-sm-0 pt-sm-3 pl-sm-5 align-items-center ml-0">
-      <div class="col-12 col-sm-5">
-        <p class="avenirRegular-600 text-center text-sm-left text-white f28" style="line-height:34px">Para que você receba direitos autorais de suas músicas é preciso cadastrar suas composições no ECAD - órgão responsável pela arrecadação e distribuição de direitos autorais no Brasil.</p>
-      </div>
-      <div class="col-7 d-none d-sm-block pr-0">
-        <img src="<?= $base_url?>/assets/img/capa-violao.png" class="img-fluid"/>
-      </div>
+  <section id="section2">
+    <div class="">
+      <p class="avenirRegular-600">Para que você receba direitos autorais de suas músicas é preciso cadastrar suas composições no ECAD - órgão responsável pela arrecadação e distribuição de direitos autorais no Brasil.</p>
     </div>
+    <div class="">
+      <img src="<?= $base_url?>/assets/img/capa-violao.png" class="img-fluid"/>
+    </div>
+    <img  src="<?= $base_url?>/assets/img/bg-degrade92.png" />
   </section>
 
   <section class="mx-sm-5" style="margin-top: -2%;margin-bottom:-3%; z-index:9998; position:relative">

@@ -4,6 +4,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral {
+    padding-top: 140px;
+  }
+}
+
+#direitos-autorais #admin-autoral div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -14,22 +32,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 1000px) {
-  #direitos-autorais #admin-autoral {
-    padding-top: 140px;
-  }
-}
-
-#direitos-autorais #admin-autoral > div {
+  margin-left: auto;
   margin-right: auto;
-  margin-left: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 456px;
   max-width: 100%;
 }
 
-#direitos-autorais #admin-autoral > div h2 {
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral div:nth-child(1) {
+    margin-left: 80px;
+    margin-right: initial;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+#direitos-autorais #admin-autoral div:nth-child(1) h2 {
   font-size: 22px;
   text-align: center;
   color: var(--red);
@@ -37,13 +61,13 @@
 }
 
 @media (min-width: 1000px) {
-  #direitos-autorais #admin-autoral > div h2 {
+  #direitos-autorais #admin-autoral div:nth-child(1) h2 {
     text-align: left;
   }
 }
 
-#direitos-autorais #admin-autoral > div h1 {
-  font-size: 35px;
+#direitos-autorais #admin-autoral div:nth-child(1) h1 {
+  font-size: 30px;
   line-height: 42px;
   text-align: center;
   color: var(--white);
@@ -51,13 +75,134 @@
 }
 
 @media (min-width: 1000px) {
-  #direitos-autorais #admin-autoral > div h1 {
+  #direitos-autorais #admin-autoral div:nth-child(1) h1 {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1100px) {
+  #direitos-autorais #admin-autoral div:nth-child(1) h1 {
+    font-size: 35px;
+  }
+}
+
+#direitos-autorais #admin-autoral div:nth-child(1) .bt {
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center;
+}
+
+#direitos-autorais #admin-autoral div:nth-child(2) {
+  display: none;
+  width: 660px;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #admin-autoral div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1100px) {
+  #direitos-autorais #admin-autoral div:nth-child(2) {
+    width: 565px;
+  }
+}
+
+@media (min-width: 1218px) {
+  #direitos-autorais #admin-autoral div:nth-child(2) {
+    width: 680px;
+  }
+}
+
+@media (min-width: 1320px) {
+  #direitos-autorais #admin-autoral div:nth-child(2) {
+    width: initial;
+  }
+}
+
+#direitos-autorais #section2 {
+  background-color: var(--primary);
+  position: relative;
+  margin-top: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section2 {
+    min-height: auto;
+  }
+}
+
+#direitos-autorais #section2 div:nth-child(1) {
+  width: 540px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section2 div:nth-child(1) {
+    margin-left: 80px;
+    margin-right: initial;
+  }
+}
+
+#direitos-autorais #section2 div:nth-child(1) > p {
+  font-size: 20px;
+  line-height: 33.6px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section2 div:nth-child(1) > p {
     text-align: left;
   }
 }
 
-#direitos-autorais #admin-autoral > div .bt {
-  font-size: 14px;
-  line-height: 16.8px;
+@media (min-width: 1100px) {
+  #direitos-autorais #section2 div:nth-child(1) > p {
+    font-size: 28px;
+  }
+}
+
+#direitos-autorais #section2 div:nth-child(2) {
+  display: none;
+  margin-left: auto;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section2 div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#direitos-autorais #section2 > img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section2 > img {
+    display: initial;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
