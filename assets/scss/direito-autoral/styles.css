@@ -44,6 +44,8 @@
   #direitos-autorais #admin-autoral div:nth-child(1) {
     margin-left: 80px;
     margin-right: initial;
+    padding-right: 0;
+    padding-left: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -148,14 +150,16 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 1000px) {
   #direitos-autorais #section2 div:nth-child(1) {
     margin-left: 80px;
     margin-right: initial;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
