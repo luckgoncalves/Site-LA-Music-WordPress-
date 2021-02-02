@@ -209,4 +209,124 @@
     display: initial;
   }
 }
+
+#direitos-autorais #section3 {
+  min-height: auto;
+  z-index: 2;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section3 {
+    margin-top: -2%;
+    max-width: 90%;
+  }
+}
+
+#direitos-autorais #section3 > div {
+  background-color: var(--white);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#direitos-autorais #section3 > div h5 {
+  margin-top: 60px;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--primary);
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section3 > div h5 {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+
+#direitos-autorais #section3 #servicos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section3 #servicos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+
+#direitos-autorais #section3 #servicos .servico {
+  width: 220px;
+  max-width: 100%;
+  margin-bottom: 45px;
+}
+
+#direitos-autorais #section3 #servicos .servico > div {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#direitos-autorais #section3 #servicos .servico p {
+  color: var(--primary);
+  font-size: 16px;
+  text-align: center;
+  line-height: 19.2px;
+}
+
+#direitos-autorais #section3 .bt {
+  margin-bottom: 90px;
+  width: 304px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8;
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #section3 .bt {
+    margin-bottom: -26px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #direitos-autorais #home-contato {
+    margin-top: -2%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

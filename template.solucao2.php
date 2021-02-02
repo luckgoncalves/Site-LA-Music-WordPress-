@@ -33,35 +33,40 @@
     <img  src="<?= $base_url?>/assets/img/bg-degrade92.png" />
   </section>
 
-  <section class="mx-sm-5" style="margin-top: -2%;margin-bottom:-3%; z-index:9998; position:relative">
-    <div class="d-flex flex-column align-items-center justify-content-center py-5 px-3 p-sm-5" style="background-color:#fff;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
-      <h5 style="color: #000;" class="avenirRegular-600 text-center text-sm-left f40">Oferecemos as seguintes soluções!</h5>
-      <div class="row w-100 mt-5">
-        <div class="col-12 col-sm-3 ">
-          <div style="min-height:120px;" class="d-flex align-items-center">
+  <section id="section3">
+    <div class="px-3">
+      <h5 class="avenirRegular-600">Oferecemos as seguintes soluções!</h5>
+     
+      <div id="servicos">
+        <div  class="servico">
+          <div>
             <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/clipboard.png" />
           </div>
-          <p style="color: #000408" class="f16 avenirRegular-500 text-center">Registro de suas músicas no ECAD.  Descomplicado e online.</p>
+          <p class="avenirRegular-500">Registro de suas músicas no ECAD.  Descomplicado e online.</p>
         </div>
-        <div class="col-12 col-sm-3">
-          <div style="min-height:120px;" class="d-flex align-items-center">
+
+        <div class="servico">
+          <div>
             <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/filiacao.png" />
           </div>
-          <p style="color: #000408" class=" f16 avenirRegular-500 text-center">Filiação GRATUITA do titular nas Associações de Gestão Coletiva (ECAD).</p>
+          <p class="avenirRegular-500">Filiação GRATUITA do titular nas Associações de Gestão Coletiva (ECAD).</p>
         </div>
-        <div class="col-12 col-sm-3">
-          <div style="min-height:120px;" class="d-flex align-items-center">
+        
+        <div class="servico">
+          <div>
             <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/tax.png" />
           </div>
-          <p style="color: #000408" class=" f16 avenirRegular-500 text-center"> Liberação de créditos retidos com a menor taxa de administração do mercado.</p>
+          <p class="avenirRegular-500"> Liberação de créditos retidos com a menor taxa de administração do mercado.</p>
         </div>
-        <div class="col-12 col-sm-3">
-          <div style="min-height:120px;" class="d-flex align-items-center">
+        
+        <div class="servico">
+          <div>
             <img class="img-fluid d-block mx-auto" src="<?= $base_url?>/assets/img/support.png" />
           </div>
-          <p style="color: #000408" class="f16 avenirRegular-500 text-center"> Suporte jurídico para proteção das músicas cadastradas.</p>
+          <p class="avenirRegular-500"> Suporte jurídico para proteção das músicas cadastradas.</p>
         </div>
       </div>
+      <a href="#home-contato" class="bt bg-red">Solicite a análise de seu repertório GRÁTIS!</a>
     </div>
   </section>
 
