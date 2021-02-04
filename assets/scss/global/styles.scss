@@ -150,84 +150,30 @@ body {
     font-family: 'AvenirRegular';
     font-weight: 500;
   }
-  .f14{
-    font-size: 0.875rem;
-  }
-  .f15{
-    font-size: 0.9375rem;
-  }
-  .f16{
-    font-size: 1rem;
-  }
-  .f18{
-    font-size: 1.125rem;
-  }
-  .f20{
-    font-size: 1.25rem;
-  }
-  .f22{
-    font-size: 1.375rem;
-  }
-  .f23{
-    font-size: 1.4375rem;
-  }
-  .f25{
-    font-size: 1.5625rem;
-  }
-  .f26{
-    font-size: 1.625rem;
-  }
-  .f28{
-    font-size: 1.75rem;
-  }
-  .f30{
-    font-size: 1.875rem;
-  }
-  .f33{
-    font-size: 2.0625rem;
-  }
-  .f35{
-    font-size: 2.1875rem;
-  }
-  .f40{
-    font-size: 2.5rem;
-  }
-  .f45{
-    font-size: 2.8125rem;
-  }
-  .f50{
-    font-size: 3.125rem;
-  }
-  .f70{
-    font-size: 4.375rem;
-  }
-
  
-  // .menu-menu-topo-container{
-  //   // padding-top: 3rem;
-  //   // padding-bottom: 3rem;
-  // }
 
   .nav-desktop{
-    @media(max-width: 980px) {
+    @media(max-width: 1000px) {
       display: none;
     }
   }
 
   .nav-mobile { 
-    @media(min-width: 980px) {
+    @media(min-width: 1000px) {
       display: none;
     }
   }
   
 
   #top-nav {
-    @media(min-width: 980px) {
+    @media(min-width: 1000px) {
       flex-direction: row;
     }
 
     li {
-      @media(min-width: 980px) {
+      position: relative;
+
+      @media(min-width: 1000px) {
         margin-right: 80px !important;
       }
       
@@ -238,16 +184,32 @@ body {
       a {
         font-family: 'AvenirBold';
         font-size: 14px;
-        color: #fff;
+        color: var(--white);
+
       }
 
       .dropdown-menu{
           background-color: #111111;
+
           text-align: center;
-      
+          
+          @media(min-width: 1000px) {
+            position: absolute;
+            background-color: var(--white);
+
+            .menu-item {
+
+              margin-right: auto !important;
+            }
+          } 
+
           .dropdown-item {
             font-family: 'AvenirRegular-500';
             font-size: 1.25rem;
+
+            @media(min-width: 1000px) {
+              color: var(--primary);
+            }
           }
       }
     }
@@ -263,7 +225,7 @@ body {
  
 
   main {
-    @media(max-width: 980px) {
+    @media(max-width: 1000px) {
       padding-top: 70px;
     }
   }

@@ -7,9 +7,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1000px) {
@@ -42,8 +42,8 @@
 
 @media (min-width: 1000px) {
   #direitos-autorais #admin-autoral div:nth-child(1) {
-    margin-left: 80px;
-    margin-right: initial;
+    margin-left: 90px;
+    margin-right: auto;
     padding-right: 0;
     padding-left: 0;
     -webkit-box-align: start;
@@ -105,6 +105,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: auto;
   }
 }
 

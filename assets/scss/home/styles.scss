@@ -1,48 +1,127 @@
-#home {
+@import url('../global/styles.scss');
+
+  #home {
     #slider {
       section {
-        /*height: 55vh;*/
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('../img/banner-top.png');
-        
-        @media(min-width:1000px) {
-          height: 80vh;
-          background-image: url('/wp-content/themes/la_music/assets/img/bg-la-slide.png');
-        
+        background-image: url('../../img/banner-top.png');
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        padding-top: 30px;
+
+        .text-slide {
+          width: 350px;
+          max-width: 100%;
+
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 65px;
+
+          padding-left: 40px;
+          padding-right: 40px;
+          
+          @media(min-width: 1000px) {
+            margin-left: 65px;
+            margin-bottom: 35px;
+
+            padding-left: 0;
+            padding-right: 0;
+          }
+          
+          @media(min-width: 1300px) {
+            margin-bottom: 50px;
+            margin-left: 85px;
+
+          }
+
           .logoLA {
-            display: none;
+            position: relative;
+            
+            @media(min-width: 1000px) {
+              display: none;
+            }
+  
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .description {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @media(min-width: 1000px) {
+              align-items: flex-start;
+            }
+
+            h1 {
+
+              margin-top: 30px;
+
+              color: var(--white);
+              font-size: 30px;
+              text-align: center !important;
+              margin-bottom: 30px;
+              
+              @media(min-width: 1000px) {
+                margin-top: 109px;
+                text-align: left !important;
+              }
+            }
+    
+            p {
+              color: var(--white);
+              font-size: 16px;
+              line-height: 19.2px;
+              
+              margin-top: 10px;
+              margin-bottom: 25px;
+
+              text-align: center !important;
+
+              @media(min-width: 1000px) {
+                text-align: left !important;
+              }
+            }
+
+            .bt {
+              margin-bottom: 45px;
+            }
+
+            >div {
+              width: 80%;
+              margin-right: auto;
+              margin-left: auto;
+
+              @media(min-width: 1000px) {
+                margin-left: initial;
+              }
+            }
           }
         }
 
-        .logoLA {
-          position: relative;
+        > div:nth-child(2) {
+          margin-top: auto;
+          margin-bottom: -10px;
+          margin-right: auto;
+          
+          display: none;
 
-          @media(min-width:1000px) {
-            width: 40%;
+          @media(min-width: 1000px) {
+            display: flex;
           }
 
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
-
-        .description {
-          @media(min-width:1000px) {
-            width: 40%;
-          }
-
-          h1 {
-            color: #fff;
-            font-size: 35px;
-          }
-  
-          p {
-            color: #fff;
-            font-size: 16px;
-          }
-        }
-      }
+        
+       }
     }
    
     #home-solucoes {
@@ -172,20 +251,19 @@
         justify-content: center;
         align-items: center;
 
+        padding-right: 17px;
+        padding-left: 17px;
+
         width: 100%;
 
         @media(min-width:1000px) {
           width: 40%;
           align-items: start;
+
+          // padding-right: initial;
+          // padding-left: initial;
         }
 
-        .bt {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          height: 48px;
-        }
 
         h2 {
           width: 270px;
@@ -207,8 +285,10 @@
             display: flex;
             align-items: center;
 
+            font-size: 16px;
+
             &::before {
-              content: url('../img/bullet.png');
+              content: url('../../img/bullet.png');
               margin-right: 1rem;
             }
 
@@ -220,7 +300,15 @@
         }
 
         .bt {
-          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-size: 14px;
+
+          width: 324px;
+          max-width: 100%;
+          height: 48px;
           margin-bottom: 40px;
         }
       }
@@ -289,7 +377,7 @@
       padding: 3rem 1.5rem;
 
       @media(min-width: 1000px) {
-        background-image: url('../img/bg-quemsomos.png');
+        background-image: url('../../img/bg-quemsomos.png');
       }
 
       @media(min-width:1300px) {
@@ -308,6 +396,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
 
           h2, p, h3 {
             margin: 1.5rem 0;
@@ -316,20 +405,39 @@
           h2 {
             font-size: 33px;
             line-height: 39.6px;
+
+            text-align: center;
+
+            @media(min-width: 1000px) {
+              text-align: left;
+            }
           }
   
           p {
             font-size: 16px;
             font-weight: 400;
+
+            text-align: center;
+
+            @media(min-width: 1000px) {
+              text-align: left;
+            }
           }
           
           h3 {
             font-size: 26px;
             line-height: 31.2px;
+
+            text-align: center;
+
+            @media(min-width: 1000px) {
+              text-align: left;
+            }
           }
 
           @media(min-width: 1000px) {
             width: 50%;
+            align-items: flex-start;
           }
 
         }

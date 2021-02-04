@@ -1,7 +1,6 @@
 @import url('../global/styles.css');
 
 #registro-marcas {
-    
     #solucoes3-home {
         display: flex;
         align-items: center;
@@ -10,26 +9,29 @@
         max-width: 100%;
         
         background-color: var(--primary);
-        // background-image: url('../../img/group34.png');
         background-repeat: no-repeat;
         background-size: cover; 
         background-position-y: center;
         
         @media(min-width: 1000px) {
+            background-image: url('../../img/bg-registro-marca.png');
             padding-top: 140px;
+            min-height: auto;
         }
         
-        div {
+        div:nth-child(1) {
             width: 392px;
             max-width: 100%;
-            margin: auto;
             text-align: center;
-
+            
+            margin: auto;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
             @media(min-width:1000px) {
+                margin-bottom: 100px;
                 margin-left: 80px;
                 text-align: left;
                 align-items: flex-start;
@@ -46,11 +48,20 @@
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 19.2px;
-                margin: 40px auto 33px;
+                margin: 17px auto 33px;
             }
 
             .bt {
                 font-size: 14px;
+            }
+        }
+
+        div:nth-child(2){
+            display: none;
+            margin-top: auto;
+            
+            @media(min-width: 1000px){
+                display: initial;
             }
         }
     }

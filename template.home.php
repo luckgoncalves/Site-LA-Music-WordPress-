@@ -36,44 +36,74 @@ $queryParceiros = new WP_Query($args);
 ?>
 <main id="home">
   <div id="slider">
-    <section id="home-home" class="selected px-5 pt-5 d-flex align-items-center">
-      <div class="row  align-items-center ">
-        <div class="order-1 order-sm-1 mb-5 mb-sm-0">
+    <section id="home-home" class="selected">
+
+        <div class="text-slide">
           <div class="logoLA">
             <img class="" src="<?= $base_url?>/assets/img/la-music-background.png" style="" />
           </div>
+
           <div class="description">
-            <h1 class=" avenirRegular-600 f30">Resgate de Créditos Retidos</h1>
-            <p class=" avenirRegular-500 f16" style="line-height: 19px">Créditos retidos são valores que o ECAD arrecada e  não distribui por inconsistências de cadastro.
+            <h1 class=" avenirRegular-600">Resgate de Créditos Retidos</h1>
+            <p class=" avenirRegular-500">Créditos retidos são valores que o ECAD arrecada e  não distribui por inconsistências de cadastro.
               Se você é compositor, pode ter créditos retidos para receber.</p>
-              <a href="https://consulta.lamusic.com.br/" class="btn mt-3 scrollSuave f14 avenirRegular-600 text-white" style="width: 200px; background-color: #ff2a2a; border-radius:0px">Consulte grátis</a>
+              <a href="https://consulta.lamusic.com.br/" class="bt bg-red scrollSuave f14 avenirRegular-600">Consulte grátis</a>
+              <div class="mt-3">
+                <ul class="d-flex px-0 justify-content-center">
+                  <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(0)" class=" mr-3">
+                    <a>
+                      <div style="height:20px;width: 20px; background-color: #2F2F2F; border:1px solid #2F2F2F; border-radius:50%"></div>
+                    </a>
+                  </li>
+    
+                  <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(1)" class=" mr-3">
+                    <a>
+                      <div style="height:20px;width: 20px; background-color: transparent; border:1px solid #2F2F2F; border-radius:50%"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
-          <div class="mt-3" style="width: 200px;">
+
+
+        </div>
+
+        <div>
+          <img src="<?= $base_url?>/assets/img/la-music-background.png" style="" />
+        </div>
+    </section>
+
+    <section id="home-home">
+      <div class="text-slide">
+        <div class="logoLA">
+          <img src="<?= $base_url?>/assets/img/la-music-background.png" style="" />
+        </div>
+
+        <div class="description">
+          <h1 class="text-white text-center text-sm-left avenirRegular-600">A startup que conecta o artista ao seu direito</h1>
+          <a href="#home-quemsomos" class="bt bg-red scrollSuave f14 avenirRegular-600">Saiba mais</a>
+          
+          <div class="mt-3">
             <ul class="d-flex px-0 justify-content-center">
-              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(0)" class=" mr-3"><a><div style="height:20px;width: 20px; background-color: #2F2F2F; border:1px solid #2F2F2F; border-radius:50%"></div></a></li>
-              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(1)" class=" mr-3"><a><div style="height:20px;width: 20px; background-color: transparent; border:1px solid #2F2F2F; border-radius:50%"></div></a></li>
+              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(0)"class=" mr-3">
+                <a>
+                  <div style="height:20px;width: 20px; background-color: transparent; border:1px solid #2F2F2F; border-radius:50%"></div>
+                </a>
+              </li>
+              
+              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(1)" class=" mr-3">
+                <a>
+                  <div style="height:20px;width: 20px; background-color: #2F2F2F; border:1px solid #2F2F2F; border-radius:50%"></div>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
+        
       </div>
-    </section>
-    <section id="home-home" class=" px-5 pt-5 d-flex align-items-center">
-      <div class="row align-items-center ">
-        <div class="col-12 order-2 order-sm-2 mb-5 mb-sm-0 d-flex flex-column align-items-center align-items-sm-start justify-content-center">
-          <div class="logoLA">
-            <img class="" src="<?= $base_url?>/assets/img/la-music-background.png" style="" />
-          </div>
-          <div class="description">
-            <h1 class="text-white f30 text-center text-sm-left avenirRegular-600">A startup que conecta o artista ao seu direito</h1>
-            <a href="#home-quemsomos" class="btn mt-3 scrollSuave f14 avenirRegular-600 text-white" style="width: 200px; background-color: #ff2a2a; border-radius:0px">Saiba mais</a>
-          </div>
-          <div class="mt-3" style="width: 200px;">
-            <ul class="d-flex px-0 justify-content-center">
-              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(0)"class=" mr-3"><a><div style="height:20px;width: 20px; background-color: transparent; border:1px solid #2F2F2F; border-radius:50%"></div></a></li>
-              <li style="list-style:none;cursor:pointer;" onclick="nexSliderM(1)" class=" mr-3"><a><div style="height:20px;width: 20px; background-color: #2F2F2F; border:1px solid #2F2F2F; border-radius:50%"></div></a></li>
-            </li>
-          </div>
-          </div>
+
+      <div>
+        <img src="<?= $base_url?>/assets/img/la-music-background.png" style="" />
       </div>
     </section>
   </div>
@@ -117,22 +147,22 @@ $queryParceiros = new WP_Query($args);
 
   <section id="home-motivo" >
       <div>
-        <h2 class="avenirBold f40">Mas por que escolher a LA Music?</h2>
+        <h2 class="avenirBold">Mas por que escolher a LA Music?</h2>
         <ul>
-          <li class="f16">
+          <li>
            <p> Você pode <strong>rescindir</strong> seu contrato <strong>quando bem entender.</strong></p>
           </li>
-          <li class="f16">
+          <li>
             <p><strong>A menor comissão</strong> do mercado</p>
           </li>
-          <li class="f16">
+          <li>
             <p><strong>Controle seu catálogo.</strong> Sem cessão de direitos autorais</p>
           </li>
-          <li class="f16">
+          <li>
             <p><strong>Informações descomplicada</strong> sobre seus direitos autorias</p>
           </li>
         </ul>
-        <a href="#home-contato" class="bt bg-red scrollSuave f14 avenirRegular-600">Fale conosco</a>
+        <a href="#home-contato" class="bt bg-red scrollSuave avenirRegular-600">Fale conosco</a>
       </div>
 
       <div>
@@ -157,12 +187,12 @@ $queryParceiros = new WP_Query($args);
   <section id="home-quemsomos" class="bg-dark">
     <div>
       <div>
-        <h2 class="avenirBold f33">Somos apaixonados por música</h2>
+        <h2 class="avenirBold">Somos apaixonados por música</h2>
         <p class="f16 avenirRegular">
           Nossa missão é descomplicar a vida do artista que não pode perder tempo com as burocracias do direito autoral e do music business, mas que precisa de uma ferramenta confiável para gestão de seu catálogo, liberando tempo e energia para o que é mais importante: <span class="avenirBold"> VIVER DE MÚSICA.</span>
         </p>
-        <h2 class="avenirBold f26">A startup que conecta o artista ao seu direito</h2>
-        <a href="/quem-somos" class="bt bg-red f14 avenirRegular-600">Quem somos</a>
+        <h2 class="avenirBold">A startup que conecta o artista ao seu direito</h2>
+        <a href="/quem-somos" class="bt bg-red avenirRegular-600">Quem somos</a>
       </div>
       <div>
         <img src="/wp-content/themes/la_music/assets/img/bg-quemsomos-la.png"/>

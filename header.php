@@ -71,6 +71,7 @@ $pageId     = $wp_query->post->ID;
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/registro-marcas/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/direito-autoral/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/creditos-retidos/styles.css" />
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/blog-single/styles.css" />
     <!-- MAIN CSS -->
 
 

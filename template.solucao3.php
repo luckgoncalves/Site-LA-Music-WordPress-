@@ -9,13 +9,13 @@
 <main id="registro-marcas">
   <section id="solucoes3-home">
     <div class=" ">
-        <h2 class="avenirRegular-600">Registro de Marcas artísticas</h2>
-        <p class="avenirRegular-500" style="line-height:19px">Temos o primeiro serviço de registro de marcas pensado exclusivamente para músicos.</p>
-        <a href="<?= get_field('link_pesquisar_viabilidade');?>" class="bt bg-red f14 avenirRegular-600">Pesquisar viabilidade</a>
+      <h2 class="avenirRegular-600">Registro de Marcas artísticas</h2>
+      <p class="avenirRegular-500" style="line-height:19px">Temos o primeiro serviço de registro de marcas pensado exclusivamente para músicos.</p>
+      <a href="<?= get_field('link_pesquisar_viabilidade');?>" class="bt bg-red f14 avenirRegular-600">Pesquisar viabilidade</a>
+    </div>
       
-      <!-- <div class="col-lg-7 d-none d-sm-block col-xl-8">
-        <img class="img-fluid" src="<?= $base_url?>/assets/img/la-solucoes3.png" style="margin-bottom:-20px" />
-      </div> -->
+    <div>
+      <img class="img-fluid" src="<?= $base_url?>/assets/img/la-solucoes3.png" style="margin-bottom:-20px" />
     </div>
   </section>
 

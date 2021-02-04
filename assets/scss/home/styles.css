@@ -1,48 +1,144 @@
+@import url("../global/styles.scss");
 #home #slider section {
-  /*height: 55vh;*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/banner-top.png");
+  background-image: url("../../img/banner-top.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+#home #slider section .text-slide {
+  width: 350px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 65px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media (min-width: 1000px) {
-  #home #slider section {
-    height: 80vh;
-    background-image: url("/wp-content/themes/la_music/assets/img/bg-la-slide.png");
-  }
-  #home #slider section .logoLA {
-    display: none;
+  #home #slider section .text-slide {
+    margin-left: 65px;
+    margin-bottom: 35px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-#home #slider section .logoLA {
+@media (min-width: 1300px) {
+  #home #slider section .text-slide {
+    margin-bottom: 50px;
+    margin-left: 85px;
+  }
+}
+
+#home #slider section .text-slide .logoLA {
   position: relative;
 }
 
 @media (min-width: 1000px) {
-  #home #slider section .logoLA {
-    width: 40%;
+  #home #slider section .text-slide .logoLA {
+    display: none;
   }
 }
 
-#home #slider section .logoLA img {
-  width: 100%;
+#home #slider section .text-slide .logoLA img {
+  max-width: 100%;
+}
+
+#home #slider section .text-slide .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 1000px) {
-  #home #slider section .description {
-    width: 40%;
+  #home #slider section .text-slide .description {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
-#home #slider section .description h1 {
-  color: #fff;
-  font-size: 35px;
+#home #slider section .text-slide .description h1 {
+  margin-top: 30px;
+  color: var(--white);
+  font-size: 30px;
+  text-align: center !important;
+  margin-bottom: 30px;
 }
 
-#home #slider section .description p {
-  color: #fff;
+@media (min-width: 1000px) {
+  #home #slider section .text-slide .description h1 {
+    margin-top: 109px;
+    text-align: left !important;
+  }
+}
+
+#home #slider section .text-slide .description p {
+  color: var(--white);
   font-size: 16px;
+  line-height: 19.2px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-align: center !important;
+}
+
+@media (min-width: 1000px) {
+  #home #slider section .text-slide .description p {
+    text-align: left !important;
+  }
+}
+
+#home #slider section .text-slide .description .bt {
+  margin-bottom: 45px;
+}
+
+#home #slider section .text-slide .description > div {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1000px) {
+  #home #slider section .text-slide .description > div {
+    margin-left: initial;
+  }
+}
+
+#home #slider section > div:nth-child(2) {
+  margin-top: auto;
+  margin-bottom: -10px;
+  margin-right: auto;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #home #slider section > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#home #slider section > div:nth-child(2) img {
+  max-width: 100%;
 }
 
 #home #home-solucoes {
@@ -211,6 +307,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 17px;
+  padding-left: 17px;
   width: 100%;
 }
 
@@ -221,19 +319,6 @@
         -ms-flex-align: start;
             align-items: start;
   }
-}
-
-#home #home-motivo > div:nth-child(1) .bt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 48px;
 }
 
 #home #home-motivo > div:nth-child(1) h2 {
@@ -262,10 +347,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
 }
 
 #home #home-motivo > div:nth-child(1) ul li::before {
-  content: url("../img/bullet.png");
+  content: url("../../img/bullet.png");
   margin-right: 1rem;
 }
 
@@ -274,7 +360,19 @@
 }
 
 #home #home-motivo > div:nth-child(1) .bt {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  width: 324px;
+  max-width: 100%;
+  height: 48px;
   margin-bottom: 40px;
 }
 
@@ -371,7 +469,7 @@
 
 @media (min-width: 1000px) {
   #home #home-quemsomos {
-    background-image: url("../img/bg-quemsomos.png");
+    background-image: url("../../img/bg-quemsomos.png");
   }
 }
 
@@ -411,6 +509,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #home #home-quemsomos > div div:nth-child(1) h2, #home #home-quemsomos > div div:nth-child(1) p, #home #home-quemsomos > div div:nth-child(1) h3 {
@@ -420,21 +521,45 @@
 #home #home-quemsomos > div div:nth-child(1) h2 {
   font-size: 33px;
   line-height: 39.6px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #home #home-quemsomos > div div:nth-child(1) h2 {
+    text-align: left;
+  }
 }
 
 #home #home-quemsomos > div div:nth-child(1) p {
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #home #home-quemsomos > div div:nth-child(1) p {
+    text-align: left;
+  }
 }
 
 #home #home-quemsomos > div div:nth-child(1) h3 {
   font-size: 26px;
   line-height: 31.2px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  #home #home-quemsomos > div div:nth-child(1) h3 {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1000px) {
   #home #home-quemsomos > div div:nth-child(1) {
     width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
