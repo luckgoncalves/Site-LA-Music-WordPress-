@@ -1,0 +1,24 @@
+@import url('../global/styles.css');
+
+.cards-blog {
+    width: 304px;
+    max-width: 100%;
+
+    h1 {
+        font-size: 16px;
+        line-height: 19.2px;
+
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+}

@@ -1,0 +1,23 @@
+@import url("../global/styles.css");
+.cards-blog {
+  width: 304px;
+  max-width: 100%;
+}
+
+.cards-blog h1 {
+  font-size: 16px;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
+
+.cards-blog p {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.cards-blog a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+/*# sourceMappingURL=styles.css.map */
