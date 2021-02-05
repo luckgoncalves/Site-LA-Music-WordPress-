@@ -411,6 +411,15 @@ footer #list-servicos li a {
   text-decoration: none;
 }
 
+footer div p:nth-child(1) {
+  margin-top: 10px;
+}
+
+footer div p {
+  font-family: 'AvenirRegular';
+  color: var(--gray);
+}
+
 #quemSomos-equipe .infoEquipe h4 {
   color: var(--red);
 }

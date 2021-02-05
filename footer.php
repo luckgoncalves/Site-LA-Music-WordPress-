@@ -67,6 +67,12 @@ $base_url = '/wp-content/themes/la_music';
           </a>
         </div>
       </div>
+      <div>
+        <p>Rua Padre Anchieta, 2.272, sobreloja – Bigorrilho</p>
+        <p> Curitiba – Paraná - CEP: 80.730-000</p>
+        <p> Fone: 41 3017-5650 </p>
+          <p>Whatsapp: 41 9239-9888</p>
+      </div>
     </div>
   </div>
 </footer>

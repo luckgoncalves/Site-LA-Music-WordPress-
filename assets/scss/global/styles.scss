@@ -396,6 +396,17 @@ body {
         }
       }
     }
+
+    div {
+      p:nth-child(1) {
+        margin-top: 10px;
+
+      }
+      p {
+        font-family: 'AvenirRegular';
+        color: var(--gray);
+      }
+    }
   }
 
   #quemSomos-equipe{
