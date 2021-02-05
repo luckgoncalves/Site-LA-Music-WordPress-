@@ -337,7 +337,7 @@ $queryParceiros = new WP_Query($args);
 
   function start(){
     setInterval(() => {
-      // nexSlider()
+      nexSlider()
     }, time);
   }
 
