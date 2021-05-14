@@ -13,6 +13,7 @@
   --gray: #7E7E7E;
   --red: #FF2A2A;
   --orange: #FF5656;
+  --green: #0FBB00;
 
   p {
     margin-bottom: 0;           
@@ -76,6 +77,24 @@ section {
         color: var(--white)
       }
   }
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+ 
+  color: var(--white);
+
+  &:hover{
+    color: var(--white)
+  }
+ 
+  h1,h2,h3,p, li, strong {
+    color: var(--white);
+
+    &:hover{
+      color: var(--white)
+    }
+}
 }
 
 .bg-white {
@@ -170,22 +189,36 @@ body {
       flex-direction: row;
     }
 
+
+    > li {
+      &:last-child {
+        background-color: var(--orange);
+        padding: 0.3rem 1.5rem;
+      }
+    }
+
     li {
       position: relative;
 
       @media(min-width: 1000px) {
+        margin-right: 45px !important;
+      }
+
+      @media(min-width:1140px) {
         margin-right: 80px !important;
       }
       
       &:last-child {
         margin-right: 0 !important;
+
+        border-radius: 6px;
       }
 
       a {
         font-family: 'AvenirBold';
-        font-size: 14px;
+        font-size: 16px;
         color: var(--white);
-
+        white-space: pre-wrap;
       }
 
       .dropdown-menu{
@@ -199,14 +232,16 @@ body {
 
             .menu-item {
 
+              background-color: transparent;
               margin-right: auto !important;
             }
           } 
 
           .dropdown-item {
             font-family: 'AvenirRegular-500';
-            font-size: 1.25rem;
+            font-size: 16px;
 
+            margin: 10px 0;
             @media(min-width: 1000px) {
               color: var(--primary);
             }
@@ -312,7 +347,7 @@ body {
 
 
   /* FOOTER*/
-  footer{
+  footer {
     background-color: var(--footer);
 
    >  div {
@@ -321,6 +356,7 @@ body {
           p {
             width: 280px;
             margin: auto;
+            font-size: 16px;
           }
         }
     }
@@ -348,12 +384,14 @@ body {
         margin-left: auto;
         margin-right: auto;
         min-width: 110px;
-
+        margin: 5px auto;
+        
         a {
           font-family: 'AvenirRegular';
           font-weight: 600;
-          font-size: 14px !important;
+          font-size: 16px !important;
           color: var(--gray);
+
 
           line-height: 32px;
           padding: 0;
@@ -364,10 +402,12 @@ body {
           position: relative !important;
           text-align: center;
           transform: unset !important;
+          
+          margin: 10px auto;
 
           .dropdown-item {
             font-family: 'AvenirRegular-500';
-            font-size: 0.85rem;
+            font-size: 16px;
           }
         }
       }
@@ -375,7 +415,7 @@ body {
       .current-menu-item {
         a {
           font-family: 'AvenirBold';
-          font-size: 1.125rem !important;
+          font-size: 16px !important;
           color: var(--white);
         }
          
@@ -386,11 +426,16 @@ body {
       list-style: none;
 
       li{
+        margin: 10px auto;
+
+        &:first-child{
+          margin-top: 0;
+        }
         
         a {
           color:#7E7E7E;
 
-          font-size: 14px;
+          font-size: 16px;
           line-height: 32px;
           text-decoration: none;
         }
@@ -407,6 +452,25 @@ body {
         color: var(--gray);
       }
     }
+    
+    
+
+    .text-abramus {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .address-footer {
+      margin-top: 16px;
+      font-size: 16px;
+    }
+  }
+
+  .text-sociais{
+    font-size: 16px;
+  }
+  
+  .text-footer {
+    font-size: 16px;
   }
 
   #quemSomos-equipe{
@@ -424,6 +488,7 @@ body {
       }
     }
   }
+
 
 
 

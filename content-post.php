@@ -6,7 +6,7 @@
 
     $imagem = '';
     if (!empty($thumburl)) :
-        $imagem = '<a href="' . get_permalink() . '"><img src="' . get_the_post_thumbnail_url(get_the_ID(), 'blog_list') . '" class="img-fluid" alt="' . get_the_title() . '" /></a>';
+        $imagem = '<a href="' . get_permalink() . '"><img src="' . get_the_post_thumbnail_url(get_the_ID(), '') . '" style="height: 100%; width:100%" alt="' . get_the_title() . '" /></a>';
     endif;
 
     $tags = wp_get_post_tags(get_the_ID(), array('fields' => 'names'));
@@ -19,7 +19,7 @@
 <div class="mb-5 cards-blog">
     <div class="card cardBlog" style="border-radius: 0px;min-height: 425px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
         
-        <div class="d-flex">
+        <div class="d-flex" style="height: 139px">
             <?php if($imagem !== ''){
                 echo $imagem;
             }else{   ?>

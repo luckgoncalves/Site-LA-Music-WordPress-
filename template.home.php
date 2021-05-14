@@ -1,38 +1,37 @@
 <?php
-/*
-Template Name: Home
- */
-$base_url = esc_url(get_template_directory_uri());
-get_header(); 
+  /* Template Name: Home*/
 
-$args = array(
-  'post_type' => 'servicos',
-  'orderby' => 'menu_order',
-  'order' => 'ASC',
-);
-$queryServicos = new WP_Query($args);
+  $base_url = '/wp-content/themes/la_music/';
+  get_header(); 
 
-$args = array(
-  'post_type' => 'clientes',
-  'orderby' => 'menu_order',
-  'order' => 'ASC',
-);
-$queryClientes = new WP_Query($args);
+  $args = array(
+    'post_type' => 'servicos',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+  );
+  $queryServicos = new WP_Query($args);
 
-$args = array(
-  'post_type' => 'testemunho',
-  'orderby' => 'menu_order',
-  'order' => 'ASC',
-  
-);
-$queryTestemunho = new WP_Query($args);
+  $args = array(
+    'post_type' => 'clientes',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+  );
+  $queryClientes = new WP_Query($args);
 
-$args = array(
-  'post_type' => 'parceiros',
-  'orderby' => 'menu_order',
-  'order' => 'ASC',
-);
-$queryParceiros = new WP_Query($args);
+  $args = array(
+    'post_type' => 'testemunho',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+    
+  );
+  $queryTestemunho = new WP_Query($args);
+
+  $args = array(
+    'post_type' => 'parceiros',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+  );
+  $queryParceiros = new WP_Query($args);
 ?>
 <main id="home">
   <div id="slider">
@@ -64,8 +63,6 @@ $queryParceiros = new WP_Query($args);
                 </ul>
               </div>
           </div>
-
-
         </div>
 
         <div>
@@ -99,7 +96,6 @@ $queryParceiros = new WP_Query($args);
             </ul>
           </div>
         </div>
-        
       </div>
 
       <div>

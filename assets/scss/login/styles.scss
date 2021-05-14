@@ -1,0 +1,124 @@
+@import url('../global/styles.css');
+
+#main-login {
+    padding-top: 140px;
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 587px;
+        max-width: 90%;
+        margin-bottom: 61px;
+
+        display: flex;
+        
+        .card {
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+
+            padding: 1.5rem;
+            @media(min-width: 500px) {
+                padding: 3rem;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 31.2px;
+                font-weight: 700;
+            }
+
+            form {
+                .form-group {
+                    label {
+                        font-size: 16px;
+                        line-height: 19.2px;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        height: 45px;
+                        max-width: 100%;
+
+                        @media(min-width: 500px) {
+                            height: 59px;
+                        }
+                    }
+                }
+
+                .next-cards {
+                    cursor: pointer;
+
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    font-weight: 600;
+
+                    color: var(--gray);
+                    
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .bt {
+                    height: 45px;
+                    border: none;
+                    border-radius: 4px;
+
+                    cursor: pointer;
+
+                    font-size: 16px;
+                    line-height: 19.2px;
+
+                    font-weight: 600;
+
+                    outline: none;
+
+                    @media(min-width: 500px) {
+                        height: 59px;
+                    }
+                }
+            }
+        }
+    }
+
+    #modal {
+        background-color: #0000009c;
+        position: fixed;
+        display: flex;
+        z-index: 2;
+
+        width: 100vw;
+        height: 100vh;
+
+        .modal-content {
+            width: 580px;
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .modal-body {
+            height: 80px;
+        }
+
+        .modal-footer{
+            button {
+                margin: auto;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                outline: none;
+
+                width: 200px;
+                max-width: 100%;
+                height: 40px;
+            }
+        }
+    }
+}

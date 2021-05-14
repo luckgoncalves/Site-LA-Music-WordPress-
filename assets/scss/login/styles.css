@@ -1,0 +1,123 @@
+@import url("../global/styles.css");
+#main-login {
+  padding-top: 140px;
+  background-color: var(--primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-login section {
+  width: 587px;
+  max-width: 90%;
+  margin-bottom: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-login section .card {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  #main-login section .card {
+    padding: 3rem;
+  }
+}
+
+#main-login section .card h2 {
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 700;
+}
+
+#main-login section .card form .form-group label {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 600;
+}
+
+#main-login section .card form .form-group input {
+  height: 45px;
+  max-width: 100%;
+}
+
+@media (min-width: 500px) {
+  #main-login section .card form .form-group input {
+    height: 59px;
+  }
+}
+
+#main-login section .card form .next-cards {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+#main-login section .card form .next-cards:hover {
+  opacity: 0.8;
+}
+
+#main-login section .card form .bt {
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 600;
+  outline: none;
+}
+
+@media (min-width: 500px) {
+  #main-login section .card form .bt {
+    height: 59px;
+  }
+}
+
+#main-login #modal {
+  background-color: #0000009c;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+#main-login #modal .modal-content {
+  width: 580px;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#main-login #modal .modal-body {
+  height: 80px;
+}
+
+#main-login #modal .modal-footer button {
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  max-width: 100%;
+  height: 40px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -4,9 +4,27 @@
 ?>
 
 <div id="primary" class="content-area">
-    <div style="height:490px; background-color: #000; " class="bg-black d-flex align-items-center justify-content-center pl-0 pl-sm-5">
-        <div style="background-image: url('<?= $base_url?>/assets/img/bg-blog.png'); width:100%; height:510px" class="row d-flex align-items-center justify-content-center">
-            <h2 class="f70 absolute text-white text-uppercase text-center avenirBold">Viver de Música</h2>
+    <div id="banner-list-blog" class="bg-black d-flex align-items-center justify-content-center pl-0 pl-sm-5">
+        <div class="row d-flex flex-column align-items-center justify-content-center">
+            
+            <h2 class="absolute text-white text-uppercase text-center avenirBold">Viver de Música</h2>
+
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback fa-2x"></span>
+                <input id="search-post" type="text" class="form-control" placeholder="Search">
+            </div>
+            <div class="has-tags">
+                <p>TAG's:</p>
+                <div>
+                    Direito autoral
+                </div>
+                <div>
+                    ISRC
+                </div>
+                <div>
+                    Dinheiro
+                </div>
+            </div>
         </div>
     </div>
     <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">

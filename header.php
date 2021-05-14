@@ -27,6 +27,10 @@ $pageId     = $wp_query->post->ID;
 
     <meta property="og:image" content="<?= get_the_post_thumbnail_url(get_the_ID(), 'blog_list')?>">
 
+    <meta name="facebook-domain-verification" content="aygybya038eb6ltspirhisalw6xztd" />
+
+    <link rel="shortcut icon" href="/wp-content/themes/la_music/assets/img/ico.svg" />
+
     <?php if ($post->ID !== 328) { ?>
         <meta property="og:description" content="<?= get_post_field('description', $post->ID) ?>" />
         <meta property="og:title" content="<?= get_post_field('title', $post->ID) ?>" />
@@ -44,15 +48,6 @@ $pageId     = $wp_query->post->ID;
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <!-- Swiper -->
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/> 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -61,6 +56,9 @@ $pageId     = $wp_query->post->ID;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/global/styles.css" />
@@ -73,6 +71,7 @@ $pageId     = $wp_query->post->ID;
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/creditos-retidos/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/blog-single/styles.css" />
     <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/blog-list/styles.css" />
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/scss/login/styles.css" />
     <!-- MAIN CSS -->
 
 

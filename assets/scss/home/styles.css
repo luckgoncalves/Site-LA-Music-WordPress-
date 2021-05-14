@@ -326,6 +326,7 @@
   text-align: center;
   line-height: 31.2px;
   font-size: 26px;
+  max-width: 100%;
 }
 
 @media (min-width: 1000px) {

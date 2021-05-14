@@ -10,6 +10,7 @@
   --gray: #7E7E7E;
   --red: #FF2A2A;
   --orange: #FF5656;
+  --green: #0FBB00;
 }
 
 :root p {
@@ -74,6 +75,23 @@ section {
 }
 
 .bg-dark h1:hover, .bg-dark h2:hover, .bg-dark h3:hover, .bg-dark p:hover, .bg-dark li:hover, .bg-dark strong:hover {
+  color: var(--white);
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+  color: var(--white);
+}
+
+.bg-green:hover {
+  color: var(--white);
+}
+
+.bg-green h1, .bg-green h2, .bg-green h3, .bg-green p, .bg-green li, .bg-green strong {
+  color: var(--white);
+}
+
+.bg-green h1:hover, .bg-green h2:hover, .bg-green h3:hover, .bg-green p:hover, .bg-green li:hover, .bg-green strong:hover {
   color: var(--white);
 }
 
@@ -184,11 +202,22 @@ body .avenirRegular-500 {
   }
 }
 
+body #top-nav > li:last-child {
+  background-color: var(--orange);
+  padding: 0.3rem 1.5rem;
+}
+
 body #top-nav li {
   position: relative;
 }
 
 @media (min-width: 1000px) {
+  body #top-nav li {
+    margin-right: 45px !important;
+  }
+}
+
+@media (min-width: 1140px) {
   body #top-nav li {
     margin-right: 80px !important;
   }
@@ -196,12 +225,14 @@ body #top-nav li {
 
 body #top-nav li:last-child {
   margin-right: 0 !important;
+  border-radius: 6px;
 }
 
 body #top-nav li a {
   font-family: 'AvenirBold';
-  font-size: 14px;
+  font-size: 16px;
   color: var(--white);
+  white-space: pre-wrap;
 }
 
 body #top-nav li .dropdown-menu {
@@ -215,13 +246,15 @@ body #top-nav li .dropdown-menu {
     background-color: var(--white);
   }
   body #top-nav li .dropdown-menu .menu-item {
+    background-color: transparent;
     margin-right: auto !important;
   }
 }
 
 body #top-nav li .dropdown-menu .dropdown-item {
   font-family: 'AvenirRegular-500';
-  font-size: 1.25rem;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
 @media (min-width: 1000px) {
@@ -339,6 +372,7 @@ footer > div > div:nth-child(1) {
 footer > div > div:nth-child(1) p {
   width: 280px;
   margin: auto;
+  font-size: 16px;
 }
 
 @media (min-width: 1000px) {
@@ -370,12 +404,13 @@ footer #bot-nav li {
   margin-left: auto;
   margin-right: auto;
   min-width: 110px;
+  margin: 5px auto;
 }
 
 footer #bot-nav li a {
   font-family: 'AvenirRegular';
   font-weight: 600;
-  font-size: 14px !important;
+  font-size: 16px !important;
   color: var(--gray);
   line-height: 32px;
   padding: 0;
@@ -387,16 +422,17 @@ footer #bot-nav li .dropdown-menu {
   text-align: center;
   -webkit-transform: unset !important;
           transform: unset !important;
+  margin: 10px auto;
 }
 
 footer #bot-nav li .dropdown-menu .dropdown-item {
   font-family: 'AvenirRegular-500';
-  font-size: 0.85rem;
+  font-size: 16px;
 }
 
 footer #bot-nav .current-menu-item a {
   font-family: 'AvenirBold';
-  font-size: 1.125rem !important;
+  font-size: 16px !important;
   color: var(--white);
 }
 
@@ -404,9 +440,17 @@ footer #list-servicos {
   list-style: none;
 }
 
+footer #list-servicos li {
+  margin: 10px auto;
+}
+
+footer #list-servicos li:first-child {
+  margin-top: 0;
+}
+
 footer #list-servicos li a {
   color: #7E7E7E;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 32px;
   text-decoration: none;
 }
@@ -418,6 +462,24 @@ footer div p:nth-child(1) {
 footer div p {
   font-family: 'AvenirRegular';
   color: var(--gray);
+}
+
+footer .text-abramus {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+footer .address-footer {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.text-sociais {
+  font-size: 16px;
+}
+
+.text-footer {
+  font-size: 16px;
 }
 
 #quemSomos-equipe .infoEquipe h4 {

@@ -1,4 +1,100 @@
 @import url("../global/styles.css");
+#banner-list-blog {
+  height: 490px;
+  background-color: #000;
+}
+
+#banner-list-blog > div {
+  background-image: url("/wp-content/themes/la_music/assets/img/bg-blog.png");
+  width: 100%;
+  height: 510px;
+}
+
+#banner-list-blog > div .has-search {
+  width: 25%;
+  position: relative;
+}
+
+#banner-list-blog > div .has-search #search-post {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  height: 57px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.23rem;
+  padding-left: 25px;
+  color: var(--white);
+}
+
+@media (max-width: 500px) {
+  #banner-list-blog > div .has-search #search-post {
+    visibility: hidden;
+  }
+}
+
+#banner-list-blog > div .has-search #search-post::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+#banner-list-blog > div .has-search #search-post:-ms-input-placeholder {
+  color: var(--white);
+}
+
+#banner-list-blog > div .has-search #search-post::-ms-input-placeholder {
+  color: var(--white);
+}
+
+#banner-list-blog > div .has-search #search-post::placeholder {
+  color: var(--white);
+}
+
+#banner-list-blog > div .has-search .fa-search {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: var(--white);
+  right: 10px;
+  bottom: 15px;
+}
+
+#banner-list-blog > div .has-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#banner-list-blog > div .has-tags p {
+  color: var(--white);
+  font-size: 1.23rem;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+#banner-list-blog > div .has-tags div {
+  margin-right: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--white);
+  padding: 0.5rem 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.23rem;
+}
+
+#banner-list-blog > div h2 {
+  font-size: 4.61rem;
+}
+
 .cards-blog {
   width: 304px;
   max-width: 100%;
