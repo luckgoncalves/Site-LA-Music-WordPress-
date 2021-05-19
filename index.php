@@ -4,7 +4,7 @@
 ?>
 
 <div id="primary" class="content-area">
-    <div id="banner-list-blog" class="bg-black d-flex align-items-center justify-content-center pl-0 pl-sm-5">
+    <div id="banner-list-blog" class="bg-black d-flex align-items-center justify-content-center pl-0">
         <div class="row d-flex flex-column align-items-center justify-content-center">
             
             <h2 class="absolute text-white text-uppercase text-center avenirBold">Viver de Música</h2>
@@ -15,28 +15,66 @@
             </div>
             <div class="has-tags">
                 <p>TAG's:</p>
-                <div>
+                <span>
                     Direito autoral
-                </div>
-                <div>
+                </span>
+                <span>
                     ISRC
-                </div>
-                <div>
+                </span>
+                <span>
                     Dinheiro
-                </div>
+                </span>
             </div>
         </div>
     </div>
-    <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">
+    
+    <div id="containerCardBlog" class="mx-3 mx-sm-5">
         <div class="row d-flex mx-0 w-100 justify-content-around">
+        
+        <?php
+            foreach ($postslist as $post) :  setup_postdata($post); ?>  
+            <!-- <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  -->
+            
+            <?php endforeach; ?> 
+           
+            <?php 
+                foreach( get_categories() as $category ) {
+                    $args = array( 'category' => $category->cat_ID, 'post_type' =>  'post' ); 
+                    $postslist = get_posts( $args );    
+                    
+
+                    echo 
+                        '<div class="row w-100 mt-5">
+                            <div class="d-flex flex-column justify-content-center" style="width: 304px;">
+                                <h2 style="font-size:2.76rem">'.$category->name.'</h2>
+                                <a href="#" class="d-block">ver mais<a/>
+                            </div>
+
+                            <div class="d-flex">';
+                                $qtd = 0;
+                                foreach ($postslist as $post) :  setup_postdata($post); 
+                                    if($qtd >= 3) {
+                                        
+                                        break;
+                                    } 
+                                    get_template_part('content', 'post');
+                                    $qtd++;
+                                endforeach;
+                    echo '</div>
+                        </div>';
+                }
+            ?>
             <?php
-            while (have_posts()) : the_post();
-                $tipo_post = get_post_type();
-                // Include the page content template.
-                get_template_part('content', $tipo_post);
-            // End the loop.
-            endwhile;
-            echo $template_content;
+            // while (have_posts()) : the_post();
+            //     $tipo_post = get_post_type();
+            //     // echo $tipo_post;
+            //     // Include the page content template.
+            //     set_query_var( 'my_var_name', 'dasd' );
+
+            //     get_template_part('content', $tipo_post, 'teste');
+            // // End the loop.
+            // endwhile;
+            // echo $template_content;
             if (get_post_type() == 'post') :
                 echo '</div>';?>
                     <div class="blog-pagination mb-5">
