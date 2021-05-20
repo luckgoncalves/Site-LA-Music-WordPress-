@@ -27,27 +27,31 @@
             </div>
         </div>
     </div>
-    
-    <div id="containerCardBlog" class="mx-3 mx-sm-5">
-        <div class="row d-flex mx-0 w-100 justify-content-around">
         
-        <?php
-            foreach ($postslist as $post) :  setup_postdata($post); ?>  
-            <!-- <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  -->
-            
-            <?php endforeach; ?> 
-           
-            <?php 
-                foreach( get_categories() as $category ) {
+    <?php $id = explode("=", $_SERVER['REDIRECT_QUERY_STRING']); ?>
+    <?php if ($id[0] === 'category') { ?>
+        <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">
+            <div class="row d-flex mx-0 w-100 justify-content-center">
+                
+                <?php $args = array( 'category' => $id[1], 'post_type' =>  'post' ); 
+                $postslist = get_posts( $args ); 
+
+                foreach ($postslist as $post) :  setup_postdata($post); 
+                    get_template_part('content', 'post');
+                endforeach;
+
+        } else { ?>
+            <div id="containerCardBlog" class="mx-3 mx-sm-5">
+                <div class="row d-flex mx-0 w-100 justify-content-center">
+                <?php foreach( get_categories() as $category ) {
                     $args = array( 'category' => $category->cat_ID, 'post_type' =>  'post' ); 
                     $postslist = get_posts( $args );    
                     
-
                     echo 
                         '<div class="row w-100 mt-5">
                             <div class="d-flex flex-column justify-content-center" style="width: 304px;">
                                 <h2 style="font-size:2.76rem">'.$category->name.'</h2>
-                                <a href="#" class="d-block">ver mais<a/>
+                                <a href="'.get_site_url().'/blog?category='.$category->cat_ID.'" class="d-block">ver mais<a/>
                             </div>
 
                             <div class="d-flex">';
@@ -63,6 +67,7 @@
                     echo '</div>
                         </div>';
                 }
+            }
             ?>
             <?php
             // while (have_posts()) : the_post();
