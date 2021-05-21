@@ -349,4 +349,11 @@ function add_favicon(){
 
 }
 
+function cmp($a, $b)
+{
+    return strcmp($b->count, $a->count);
+}
+
+
+
 add_action('wp_head','add_favicon');

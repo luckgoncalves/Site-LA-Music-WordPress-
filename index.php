@@ -3,6 +3,14 @@
     get_header(); 
 ?>
 
+<?php 
+        
+    $get_tags = get_tags();
+
+    usort($get_tags, "cmp");
+   
+?>
+
 <div id="primary" class="content-area">
     <div id="banner-list-blog" class="bg-black d-flex align-items-center justify-content-center pl-0">
         <div class="row d-flex flex-column align-items-center justify-content-center">
@@ -15,19 +23,21 @@
             </div>
             <div class="has-tags">
                 <p>TAG's:</p>
-                <span>
-                    Direito autoral
-                </span>
-                <span>
-                    ISRC
-                </span>
-                <span>
-                    Dinheiro
-                </span>
+                <?php 
+                    $i=0;
+                     while (list($key, $value) = each($get_tags)) :
+                        if($i >= 5) break; ?>
+                        
+                        <span class="tag-filter">
+                            <?= $value->name; ?>
+                        </span>
+                <?php 
+                    $i++;
+                    endwhile;?>
             </div>
         </div>
     </div>
-        
+       
     <?php $id = explode("=", $_SERVER['REDIRECT_QUERY_STRING']); ?>
     <?php if ($id[0] === 'category') { ?>
         <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">
@@ -41,30 +51,30 @@
                 endforeach;
 
         } else { ?>
-            <div id="containerCardBlog" class="mx-3 mx-sm-5">
-                <div class="row d-flex mx-0 w-100 justify-content-center">
+            <div id="containerCardBlog">
+                <div class="row d-flex mx-0 w-100 mt-5 justify-content-start">
                 <?php foreach( get_categories() as $category ) {
                     $args = array( 'category' => $category->cat_ID, 'post_type' =>  'post' ); 
                     $postslist = get_posts( $args );    
                     
                     echo 
-                        '<div class="row w-100 mt-5">
-                            <div class="d-flex flex-column justify-content-center" style="width: 304px;">
-                                <h2 style="font-size:2.76rem">'.$category->name.'</h2>
-                                <a href="'.get_site_url().'/blog?category='.$category->cat_ID.'" class="d-block">ver mais<a/>
+                        '<div class="d-flex w-100 custom-scroll" style="overflow-x: auto; padding-left:3.37rem;">
+                            <div class="d-flex blog-category flex-column justify-content-center">
+                                <h2 class="name-category">'.strtolower($category->name).'</h2>
+                                <a class="link-category-posts" href="'.get_site_url().'/blog?category='.$category->cat_ID.'" class="d-block">Ver mais<a/>
                             </div>
-
-                            <div class="d-flex">';
-                                $qtd = 0;
-                                foreach ($postslist as $post) :  setup_postdata($post); 
-                                    if($qtd >= 3) {
+                            <div class="w-100 ">
+                                <div class="d-flex  w-100">';
+                                    $qtd = 0;
+                                    foreach ($postslist as $post) :  setup_postdata($post); 
+                                        if($qtd >= 3)
+                                            break;
                                         
-                                        break;
-                                    } 
-                                    get_template_part('content', 'post');
-                                    $qtd++;
-                                endforeach;
-                    echo '</div>
+                                        get_template_part('content', 'post');
+                                        $qtd++;
+                                    endforeach;
+                        echo    '</div>
+                            </div>
                         </div>';
                 }
             }

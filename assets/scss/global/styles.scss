@@ -2,7 +2,8 @@
 @import url('../../fonts/stylesheet.css');
 
 :root{
-  font-size: 13px;
+  font-size: 16px;
+  font-family: 'AvenirRegular';
 
   --primary: #000;
   --secondary: #262626;
@@ -85,14 +86,14 @@ section {
   color: var(--white);
 
   &:hover{
-    color: var(--white)
+    color: var(--white);
   }
  
   h1,h2,h3,p, li, strong {
     color: var(--white);
 
     &:hover{
-      color: var(--white)
+      color: var(--white);
     }
 }
 }
@@ -111,7 +112,7 @@ section {
   color: var(--white);    
 
   &:hover{
-    color: var(--white)
+    color: var(--white);
   }
 }
 
@@ -120,14 +121,14 @@ section {
   color: var(--white);
 
   &:hover{
-    color: var(--white)
+    color: var(--white);
   }
 }
 
 .desktop {
   display: none;
 
-  @media(min-width: 1000px) {
+  @media(min-width: 1024px) {
     display: flex;
   }
 }
@@ -135,7 +136,7 @@ section {
 .mobile {
   display: flex;
 
-  @media(min-width: 1000px) {
+  @media(min-width: 1024px) {
     display: none;
   }
 }
@@ -143,8 +144,6 @@ section {
 body {
   font-family: 'AvenirRegular';
 
- 
-  
   b{
     font-family: 'AvenirBold';
   }
@@ -172,20 +171,20 @@ body {
  
 
   .nav-desktop{
-    @media(max-width: 1000px) {
+    @media(max-width: 1055px) {
       display: none;
     }
   }
 
   .nav-mobile { 
-    @media(min-width: 1000px) {
+    @media(min-width: 1055px) {
       display: none;
     }
   }
   
 
   #top-nav {
-    @media(min-width: 1000px) {
+    @media(min-width: 1055px) {
       flex-direction: row;
     }
 
@@ -200,7 +199,7 @@ body {
     li {
       position: relative;
 
-      @media(min-width: 1000px) {
+      @media(min-width: 1055px) {
         margin-right: 45px !important;
       }
 
@@ -226,7 +225,7 @@ body {
 
           text-align: center;
           
-          @media(min-width: 1000px) {
+          @media(min-width: 1055px) {
             position: absolute;
             background-color: var(--white);
 
@@ -242,7 +241,7 @@ body {
             font-size: 16px;
 
             margin: 10px 0;
-            @media(min-width: 1000px) {
+            @media(min-width: 1055px) {
               color: var(--primary);
             }
           }
@@ -251,19 +250,19 @@ body {
   }
 }
 
-  .navbar-toggler {
-    border: none;
-    margin-left: auto;
+.navbar-toggler {
+  border: none;
+  margin-left: auto;
 
-    outline: none;
-  }
+  outline: none;
+}
  
 
-  main {
-    @media(max-width: 1000px) {
-      padding-top: 70px;
-    }
+main {
+  @media(max-width: 1055px) {
+    padding-top: 70px;
   }
+}
 
   
 
@@ -279,7 +278,7 @@ body {
       flex-direction: column;
     }
 
-    @media(min-width:1000px) {
+    @media(min-width:1055px) {
       margin-top: -125px;
       
       #home-contato-logo {
@@ -320,7 +319,7 @@ body {
     
     .wpcf7-textarea{
       border-radius: 0; 
-      border: 1px solid #DBDBDB
+      border: 1px solid #DBDBDB;
     }
 
     input[type=submit]{
@@ -361,7 +360,7 @@ body {
         }
     }
 
-    @media(min-width:1000px) {
+    @media(min-width:1055px) {
       div:nth-child(3) {
       >  div {
           width: 280px !important;
@@ -469,28 +468,25 @@ body {
     font-size: 16px;
   }
   
-  .text-footer {
-    font-size: 16px;
-  }
+.text-footer {
+  font-size: 16px;
+}
 
-  #quemSomos-equipe{
-    .infoEquipe{
-      h4{
-        color: var(--red);
-      }
+#quemSomos-equipe{
+  .infoEquipe{
+    h4{
+      color: var(--red);
+    }
 
-      p{
-        color: #444444;
-        font-size: 0.875rem;
-        line-height: 17px;
-        font-family: 'avenirRegular';
-        font-weight: 500;
-      }
+    p{
+      color: #444444;
+      font-size: 0.875rem;
+      line-height: 17px;
+      font-family: 'avenirRegular';
+      font-weight: 500;
     }
   }
-
-
-
+}
 
 #slider{
   position: relative;
@@ -537,7 +533,6 @@ body {
 
 .custom-scroll {
   &::-webkit-scrollbar {
-    width: 142px;
     height: 11px;
   }
   

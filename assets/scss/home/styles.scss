@@ -573,10 +573,8 @@
     }
 
     #home-clientes {
-      
       background: #000A13;
      
-
       #img-mic {
         display: none;
 
@@ -592,10 +590,11 @@
         align-items: center;
         width: 80% !important;
         
-        > div:nth-child(1) {
+        > .div-1 {
           width: 250px;
           
           a {
+            font-size: 0.875rem;
             margin: auto;
           }
           
@@ -609,7 +608,7 @@
           }
         }
 
-        > div:nth-child(3) {
+        > .div-1--mobile {
           width: 288px;
 
           a {

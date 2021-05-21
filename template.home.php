@@ -235,7 +235,7 @@
 
     <div id="divClientes" class="w-100 d-flex">
 
-      <div class="py-5">
+      <div class="py-5 div-1">
         <h2 class="text-white mb-5 text-center text-sm-left avenirBold ">Estes são alguns clientes da casa</h2>
         <a href="/clientes" class="bt bg-red desktop avenirRegular-500">Veja a lista completa de clientes</a>
       </div>
@@ -249,13 +249,12 @@
                     <div class="d-flex align-items-center justify-content-center">
                       <img class="img-fluid" style="border-radius:50%" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'circular')?>" alt="<?= the_title();?>" />
                     </div>
-
             <?php endif; ?>
           <?php endwhile; ?>
         <?php endif;?>
       </div>
 
-      <div class="text-center mobile col-12 my-5">
+      <div class="text-center mobile col-12 my-5 div-1--mobile">
         <a href="/clientes" class="bt bg-red avenirRegular-500  mx-auto">Veja a lista completa de clientes</a>
       </div>
     

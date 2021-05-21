@@ -1,6 +1,7 @@
 @import url("../../fonts/stylesheet.css");
 :root {
-  font-size: 13px;
+  font-size: 16px;
+  font-family: 'AvenirRegular';
   --primary: #000;
   --secondary: #262626;
   --footer: #111111;
@@ -126,7 +127,7 @@ section {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .desktop {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -140,7 +141,7 @@ section {
   display: flex;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .mobile {
     display: none;
   }
@@ -181,19 +182,19 @@ body .avenirRegular-500 {
   font-weight: 500;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1055px) {
   body .nav-desktop {
     display: none;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   body .nav-mobile {
     display: none;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   body #top-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -211,7 +212,7 @@ body #top-nav li {
   position: relative;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   body #top-nav li {
     margin-right: 45px !important;
   }
@@ -240,7 +241,7 @@ body #top-nav li .dropdown-menu {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   body #top-nav li .dropdown-menu {
     position: absolute;
     background-color: var(--white);
@@ -257,7 +258,7 @@ body #top-nav li .dropdown-menu .dropdown-item {
   margin: 10px 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   body #top-nav li .dropdown-menu .dropdown-item {
     color: var(--primary);
   }
@@ -269,7 +270,7 @@ body #top-nav li .dropdown-menu .dropdown-item {
   outline: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1055px) {
   main {
     padding-top: 70px;
   }
@@ -294,7 +295,7 @@ body #top-nav li .dropdown-menu .dropdown-item {
           flex-direction: column;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   #home-contato {
     margin-top: -125px;
   }
@@ -375,7 +376,7 @@ footer > div > div:nth-child(1) p {
   font-size: 16px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1055px) {
   footer div:nth-child(3) > div {
     width: 280px !important;
   }
@@ -542,7 +543,6 @@ footer .address-footer {
 }
 
 .custom-scroll::-webkit-scrollbar {
-  width: 142px;
   height: 11px;
 }
 

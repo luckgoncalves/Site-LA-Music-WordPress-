@@ -14,13 +14,10 @@
 
 ?>
 
-<?php $newValue = get_query_var( 'categories' );?>
-
 <?php if (get_post_type() == 'post') : ?>
 
-<div class="mr-5 cards-blog">
+<div class="mt-5 mb-2 cards-blog">
     <div class="card cardBlog" style="border-radius: 0px;min-height: 425px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
-        
         <div class="d-flex" style="height: 139px">
             <?php if($imagem !== ''){
                 echo $imagem;
