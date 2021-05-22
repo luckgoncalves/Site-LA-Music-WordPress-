@@ -11,7 +11,6 @@
 
     $tags = wp_get_post_tags(get_the_ID(), array('fields' => 'names'));
     $tags = implode(", ", $tags);
-
 ?>
 
 <?php if (get_post_type() == 'post') : ?>
@@ -40,6 +39,7 @@
                 </div>
                 <?php the_excerpt();?>
             </div>
+            <?= $tags;?>
 
             <a href="<?= get_permalink(); ?>" class="f18" style="color: #ff502a;">Ler mais</a>
         </div>

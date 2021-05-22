@@ -84,6 +84,11 @@
                   background-color: var(--red);  
                   border: none;
                 }
+
+                &.active {
+                    background-color: var(--red);  
+                    border: none;
+                }
             }
         }
             

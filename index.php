@@ -4,11 +4,9 @@
 ?>
 
 <?php 
-        
     $get_tags = get_tags();
 
     usort($get_tags, "cmp");
-   
 ?>
 
 <div id="primary" class="content-area">
@@ -21,6 +19,7 @@
                 <span class="fa fa-search form-control-feedback fa-2x"></span>
                 <input id="search-post" type="text" class="form-control" placeholder="Search">
             </div>
+
             <div class="has-tags">
                 <p>TAG's:</p>
                 <?php 
@@ -28,7 +27,7 @@
                      while (list($key, $value) = each($get_tags)) :
                         if($i >= 5) break; ?>
                         
-                        <span class="tag-filter">
+                        <span class="tag-filter" id="tag<?= $value->name; ?>" onclick="selectTags(`<?= $value->name; ?>`);">
                             <?= $value->name; ?>
                         </span>
                 <?php 
@@ -37,18 +36,25 @@
             </div>
         </div>
     </div>
-       
-    <?php $id = explode("=", $_SERVER['REDIRECT_QUERY_STRING']); ?>
-    <?php if ($id[0] === 'category') { ?>
+    
+      
+    <?php if ($_SERVER['QUERY_STRING']) { ?>
         <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">
             <div class="row d-flex mx-0 w-100 justify-content-center">
                 
-                <?php $args = array( 'category' => $id[1], 'post_type' =>  'post' ); 
-                $postslist = get_posts( $args ); 
+                <?php $args = array( 
+                    'post_type' =>  'post',
+                ); 
 
-                foreach ($postslist as $post) :  setup_postdata($post); 
-                    get_template_part('content', 'post');
-                endforeach;
+                $postslist = get_posts( $args );
+                while (have_posts()) : the_post();
+                    $tipo_post = get_post_type();
+
+                    // Include the page content template.
+                    get_template_part('content', $tipo_post);
+                // End the loop.
+                endwhile;
+                
 
         } else { ?>
             <div id="containerCardBlog">
@@ -61,7 +67,7 @@
                         '<div class="d-flex w-100 custom-scroll" style="overflow-x: auto; padding-left:3.37rem;">
                             <div class="d-flex blog-category flex-column justify-content-center">
                                 <h2 class="name-category">'.strtolower($category->name).'</h2>
-                                <a class="link-category-posts" href="'.get_site_url().'/blog?category='.$category->cat_ID.'" class="d-block">Ver mais<a/>
+                                <a class="link-category-posts" href="'.get_site_url().'/blog?cat='.$category->cat_ID.'" class="d-block">Ver mais<a/>
                             </div>
                             <div class="w-100 ">
                                 <div class="d-flex  w-100">';

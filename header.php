@@ -118,11 +118,13 @@ $pageId     = $wp_query->post->ID;
           <div class="pos-f-t nav-mobile">
               <nav class="navbar navbar-dark float-right w-100" style="background-color: #111111">
                 <img src="<?= $base_url ?>/assets/img/logo-la.svg" id="logoLA" class="d-inline-block logoTop img-fluid align-top" alt="LA Music" style="cursor:pointer">
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <img src="/wp-content/themes/la_music/assets/img/hamburguer.svg" alt="Menu">
                 </button>
+                
                 <div class="collapse w-100 justify-content-center" id="navbarToggleExternalContent">
                   <?php wp_nav_menu(array('theme_location' => 'menu-topo', 'menu_class' => 'menu-topo align-items-center navbar-nav mr-auto text-center', 'menu_id' => 'top-nav')); ?>
                 </div>
