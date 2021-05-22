@@ -17,7 +17,7 @@
 
             <div class="form-group has-search">
                 <span class="fa fa-search form-control-feedback fa-2x"></span>
-                <input id="search-post" type="text" class="form-control" placeholder="Search">
+                <input id="search-post" onkeyup="getSearch();" type="text" class="form-control" placeholder="Search">
             </div>
 
             <div class="has-tags">

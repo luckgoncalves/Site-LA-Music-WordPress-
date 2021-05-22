@@ -1,12 +1,14 @@
 activeTag();
 
 selectTags = (newTags) => {
-    let url = window.location.origin + window.location.pathname+'?';
+    let { origin, pathname, search } = location
+    let url = origin +pathname+'?';
     
-    let search = location.search.substring(1);
+    search = search.substring(1);
     
     let tags = 'tag='+ newTags;
     let cat  = '';
+    let s    = '';
     
     if (search) {
         let searchToObject = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}')
@@ -26,11 +28,13 @@ selectTags = (newTags) => {
         let searchCat = searchToObject.cat ? `${searchToObject.cat}&` : '';
         cat += searchCat ? 'cat='+ searchCat : '';
         
+        s = searchToObject.s ? `&s=${searchToObject.s}` : '';
     }
     activeTag();
 
-    url += cat+tags;
+    url += cat+tags+s;
     
+    // Rediect 
     window.location.href = url
 }
 
@@ -46,5 +50,40 @@ function activeTag () {
                     $(`#tag${element}`).addClass('active')            
                 });
         }
+
+        if(searchToObject.s) {
+            $('#search-post').val(searchToObject.s)
+        }
     }
+}
+
+
+var interval = 0
+function getSearch() {
+    let url = location.origin +location.pathname+'?';
+
+    let value = $('#search-post').val()
+    clearInterval(interval)
+    interval = setTimeout(() => {
+        
+        // console.log(`${location.href}&s=${value}`)
+        if(location.search) {
+            let searchToObject = JSON.parse('{"' + decodeURI(location.search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}')
+            console.log(searchToObject)
+            let newSearchs = ''
+            Object.keys(searchToObject).forEach(keys => {
+                let newkeys = keys.replace('?','')
+
+                if (keys === 's'){
+                    newSearchs += `&${newkeys}=${value}`;
+                } else {
+                    newSearchs += `&${newkeys}=${searchToObject[keys]}`
+                }
+            })
+            
+            window.location.href = `${url}?${newSearchs}`;
+        }
+    
+        window.location.href = `?s=${value}`;
+    }, 550);
 }
