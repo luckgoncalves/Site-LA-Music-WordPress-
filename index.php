@@ -70,7 +70,7 @@
                                 <a class="link-category-posts" href="'.get_site_url().'/blog?cat='.$category->cat_ID.'" class="d-block">Ver mais<a/>
                             </div>
                             <div class="w-100 ">
-                                <div class="d-flex  w-100">';
+                                <div class="d-flex cards-scroll w-100">';
                                     $qtd = 0;
                                     foreach ($postslist as $post) :  setup_postdata($post); 
                                         if($qtd >= 3)

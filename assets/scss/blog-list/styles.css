@@ -116,6 +116,10 @@
   font-size: 4.61rem;
 }
 
+.cards-scroll .cards-blog {
+  margin-right: 20px;
+}
+
 .blog-category {
   margin-right: 2.37rem;
   min-width: 212px;
