@@ -1,26 +1,35 @@
+@import url("../../fonts/stylesheet.css");
 
-@import url('../../fonts/stylesheet.css');
-
-:root{
-  font-size: 16px;
-  font-family: 'AvenirRegular';
+:root {
+  font-family: "AvenirRegular";
 
   --primary: #000;
   --secondary: #262626;
   --footer: #111111;
-  --blue: #000A13;
-  --gray-ligth: #E5E5E5;
+  --blue: #000a13;
+  --gray-ligth: #e5e5e5;
   --white: #fff;
-  --gray: #7E7E7E;
-  --red: #FF2A2A;
-  --orange: #FF5656;
-  --green: #0FBB00;
+  --gray: #7e7e7e;
+  --red: #ff2a2a;
+  --orange: #ff5656;
+  --green: #0fbb00;
 
   p {
-    margin-bottom: 0;           
+    margin-bottom: 0;
   }
 }
 
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
 
 section {
   min-height: 550px;
@@ -37,7 +46,6 @@ section {
   &:hover {
     text-decoration: none;
     opacity: 0.9;
-
   }
 }
 
@@ -64,54 +72,69 @@ section {
 .bg-light {
   background: var(--gray-ligth);
 
-  h1,h2,h3,p, li, strong {
-      color: var(--primary);
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong {
+    color: var(--primary);
   }
 }
 
 .bg-dark {
-    background-color: var(--primary) !important;
-    h1,h2,h3,p, li, strong {
-      color: var(--white);
+  background-color: var(--primary) !important;
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong {
+    color: var(--white);
 
-      &:hover{
-        color: var(--white)
-      }
+    &:hover {
+      color: var(--white);
+    }
   }
 }
 
 .bg-green {
   background-color: var(--green) !important;
- 
+
   color: var(--white);
 
-  &:hover{
+  &:hover {
     color: var(--white);
   }
- 
-  h1,h2,h3,p, li, strong {
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong {
     color: var(--white);
 
-    &:hover{
+    &:hover {
       color: var(--white);
     }
-}
+  }
 }
 
 .bg-white {
   background: var(--white);
   color: var(--primary);
 
-  &:hover{
-    color: var(--primary)
+  &:hover {
+    color: var(--primary);
   }
 }
 
 .bg-red {
   background: var(--red) !important;
-  color: var(--white);    
+  color: var(--white);
 
-  &:hover{
+  &:hover {
     color: var(--white);
   }
 }
@@ -120,7 +143,7 @@ section {
   background: var(--orange);
   color: var(--white);
 
-  &:hover{
+  &:hover {
     color: var(--white);
   }
 }
@@ -128,7 +151,7 @@ section {
 .desktop {
   display: none;
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     display: flex;
   }
 }
@@ -136,58 +159,55 @@ section {
 .mobile {
   display: flex;
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 }
 
 body {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
 
-  b{
-    font-family: 'AvenirBold';
+  b {
+    font-family: "AvenirBold";
   }
-  .LoraBold{
-    font-family: 'LoraBold';
+  .LoraBold {
+    font-family: "LoraBold";
   }
-  .LoraRegular{
-    font-family: 'LoraRegular';
+  .LoraRegular {
+    font-family: "LoraRegular";
   }
-  .avenirBold{
-    font-family: 'AvenirBold';
+  .avenirBold {
+    font-family: "AvenirBold";
   }
-  .avenirRegular{
-    font-family: 'AvenirRegular';
+  .avenirRegular {
+    font-family: "AvenirRegular";
     font-weight: normal;
   }
-  .avenirRegular-600{
-    font-family: 'AvenirRegular';
+  .avenirRegular-600 {
+    font-family: "AvenirRegular";
     font-weight: 600;
   }
-  .avenirRegular-500{
-    font-family: 'AvenirRegular';
+  .avenirRegular-500 {
+    font-family: "AvenirRegular";
     font-weight: 500;
   }
- 
 
-  .nav-desktop{
-    @media(max-width: 1055px) {
+  .nav-desktop {
+    @media (max-width: 1055px) {
       display: none;
     }
   }
 
-  .nav-mobile { 
-    @media(min-width: 1055px) {
+  .nav-mobile {
+    @media (min-width: 1055px) {
       display: none;
     }
   }
-  
 
   #top-nav {
-    @media(min-width: 1055px) {
+    @media (min-width: 1055px) {
       flex-direction: row;
     }
-
 
     > li {
       &:last-child {
@@ -199,14 +219,14 @@ body {
     li {
       position: relative;
 
-      @media(min-width: 1055px) {
+      @media (min-width: 1055px) {
         margin-right: 45px !important;
       }
 
-      @media(min-width:1140px) {
+      @media (min-width: 1140px) {
         margin-right: 80px !important;
       }
-      
+
       &:last-child {
         margin-right: 0 !important;
 
@@ -214,37 +234,36 @@ body {
       }
 
       a {
-        font-family: 'AvenirBold';
+        font-family: "AvenirBold";
         font-size: 16px;
         color: var(--white);
         white-space: pre-wrap;
       }
 
-      .dropdown-menu{
-          background-color: #111111;
+      .dropdown-menu {
+        background-color: #111111;
 
-          text-align: center;
-          
-          @media(min-width: 1055px) {
-            position: absolute;
-            background-color: var(--white);
+        text-align: center;
 
-            .menu-item {
+        @media (min-width: 1055px) {
+          position: absolute;
+          background-color: var(--white);
 
-              background-color: transparent;
-              margin-right: auto !important;
-            }
-          } 
-
-          .dropdown-item {
-            font-family: 'AvenirRegular-500';
-            font-size: 16px;
-
-            margin: 10px 0;
-            @media(min-width: 1055px) {
-              color: var(--primary);
-            }
+          .menu-item {
+            background-color: transparent;
+            margin-right: auto !important;
           }
+        }
+
+        .dropdown-item {
+          font-family: "AvenirRegular-500";
+          font-size: 16px;
+
+          margin: 10px 0;
+          @media (min-width: 1055px) {
+            color: var(--primary);
+          }
+        }
       }
     }
   }
@@ -256,241 +275,231 @@ body {
 
   outline: none;
 }
- 
 
 main {
-  @media(max-width: 1055px) {
+  @media (max-width: 1055px) {
     padding-top: 70px;
   }
 }
 
-  
+#home-contato {
+  > div {
+    background-image: url("../../img/18.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  #home-contato {
-    > div {
-      background-image: url('../../img/18.png');
-      background-repeat: no-repeat;
-      background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1055px) {
+    margin-top: -125px;
+
+    #home-contato-logo {
+      margin-top: 80px !important;
+    }
+  }
+
+  .card {
+    max-width: 100%;
+    width: 483px;
+
+    .card-header {
+      border-bottom: none;
+      background: var(--white);
 
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-    }
-
-    @media(min-width:1055px) {
-      margin-top: -125px;
-      
-      #home-contato-logo {
-        margin-top: 80px !important;
-      }
-    }
-
-    .card {
-      max-width: 100%;
-      width: 483px;
-
-      .card-header {
-        border-bottom: none;
-        background: var(--white);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-      }
-
-      .card-body {
-        position: relative;
-        background-color: var(--white);
-      }
-    }
-  }
-
-  form{
-    p {
-      margin-bottom: 1rem !important;
-    }
-    .wpcf7-text{
-        border-radius: 0; 
-        border: 1px solid #DBDBDB; 
-        height: 50px;
-    }
-    
-    .wpcf7-textarea{
-      border-radius: 0; 
-      border: 1px solid #DBDBDB;
-    }
-
-    input[type=submit]{
-      background-color: var(--red);
-      color: var(--white);
-      height: 50px;
-    }
-  }
-
-  .bodyPoliticas{
-    p{
-      font-family: 'avenirRegular';
-      line-height: 22px;
-    }
-  }
-
-  .bodyTermos{
-    p{
-      text-align: justify;
-      font-family: 'avenirRegular';
-      line-height: 22px;
-    }
-  }
-
-
-  /* FOOTER*/
-  footer {
-    background-color: var(--footer);
-
-   >  div {
-      >  div:nth-child(1) {
-        text-align: center;
-          p {
-            width: 280px;
-            margin: auto;
-            font-size: 16px;
-          }
-        }
-    }
-
-    @media(min-width:1055px) {
-      div:nth-child(3) {
-      >  div {
-          width: 280px !important;
-        }
-      }
-    }
-
-    #bot-nav {
-      list-style: none;
-
-      display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: row;
-
-      margin-bottom: 0;
-      padding-bottom: 0;
-
-      li {
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 110px;
-        margin: 5px auto;
-        
-        a {
-          font-family: 'AvenirRegular';
-          font-weight: 600;
-          font-size: 16px !important;
-          color: var(--gray);
-
-
-          line-height: 32px;
-          padding: 0;
-        }
-
-        .dropdown-menu{
-          background-color: var(--footer);
-          position: relative !important;
-          text-align: center;
-          transform: unset !important;
-          
-          margin: 10px auto;
-
-          .dropdown-item {
-            font-family: 'AvenirRegular-500';
-            font-size: 16px;
-          }
-        }
-      }
-
-      .current-menu-item {
-        a {
-          font-family: 'AvenirBold';
-          font-size: 16px !important;
-          color: var(--white);
-        }
-         
-      }
     }
 
-    #list-servicos{
-      list-style: none;
+    .card-body {
+      position: relative;
+      background-color: var(--white);
+    }
+  }
+}
 
-      li{
+form {
+  p {
+    margin-bottom: 1rem !important;
+  }
+  .wpcf7-text {
+    border-radius: 0;
+    border: 1px solid #dbdbdb;
+    height: 50px;
+  }
+
+  .wpcf7-textarea {
+    border-radius: 0;
+    border: 1px solid #dbdbdb;
+  }
+
+  input[type="submit"] {
+    background-color: var(--red);
+    color: var(--white);
+    height: 50px;
+  }
+}
+
+.bodyPoliticas {
+  p {
+    font-family: "avenirRegular";
+    line-height: 22px;
+  }
+}
+
+.bodyTermos {
+  p {
+    text-align: justify;
+    font-family: "avenirRegular";
+    line-height: 22px;
+  }
+}
+
+/* FOOTER*/
+footer {
+  background-color: var(--footer);
+
+  > div {
+    > div:nth-child(1) {
+      text-align: center;
+      p {
+        width: 280px;
+        margin: auto;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (min-width: 1055px) {
+    div:nth-child(3) {
+      > div {
+        width: 280px !important;
+      }
+    }
+  }
+
+  #bot-nav {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    li {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 110px;
+      margin: 5px auto;
+
+      a {
+        font-family: "AvenirRegular";
+        font-weight: 600;
+        font-size: 16px !important;
+        color: var(--gray);
+
+        line-height: 32px;
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        background-color: var(--footer);
+        position: relative !important;
+        text-align: center;
+        transform: unset !important;
+
         margin: 10px auto;
 
-        &:first-child{
-          margin-top: 0;
-        }
-        
-        a {
-          color:#7E7E7E;
-
+        .dropdown-item {
+          font-family: "AvenirRegular-500";
           font-size: 16px;
-          line-height: 32px;
-          text-decoration: none;
         }
       }
     }
 
-    div {
-      p:nth-child(1) {
-        margin-top: 10px;
-
+    .current-menu-item {
+      a {
+        font-family: "AvenirBold";
+        font-size: 16px !important;
+        color: var(--white);
       }
-      p {
-        font-family: 'AvenirRegular';
-        color: var(--gray);
-      }
-    }
-    
-    
-
-    .text-abramus {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .address-footer {
-      margin-top: 16px;
-      font-size: 16px;
     }
   }
 
-  .text-sociais{
+  #list-servicos {
+    list-style: none;
+
+    li {
+      margin: 10px auto;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        color: #7e7e7e;
+
+        font-size: 16px;
+        line-height: 32px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  div {
+    p:nth-child(1) {
+      margin-top: 10px;
+    }
+    p {
+      font-family: "AvenirRegular";
+      color: var(--gray);
+    }
+  }
+
+  .text-abramus {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .address-footer {
+    margin-top: 16px;
     font-size: 16px;
   }
-  
+}
+
+.text-sociais {
+  font-size: 16px;
+}
+
 .text-footer {
   font-size: 16px;
 }
 
-#quemSomos-equipe{
-  .infoEquipe{
-    h4{
+#quemSomos-equipe {
+  .infoEquipe {
+    h4 {
       color: var(--red);
     }
 
-    p{
+    p {
       color: #444444;
       font-size: 0.875rem;
       line-height: 17px;
-      font-family: 'avenirRegular';
+      font-family: "avenirRegular";
       font-weight: 500;
     }
   }
 }
 
-#slider{
+#slider {
   position: relative;
-} 
+}
 
 #slider section {
   display: none !important;
@@ -503,47 +512,50 @@ main {
 
 #slider {
   section {
-    &.selected{
+    &.selected {
       display: flex !important;
       opacity: 1;
     }
   }
 }
 
-.scrollActive{
+.scrollActive {
   overflow-x: auto;
-      padding-bottom: 1em;
-      &::-webkit-scrollbar-track {
-          border-radius: 10px;
-          background-color: #f5f0f0;
-      }
-      &::-webkit-scrollbar {
-          width: 12px;
-          height: 10px;
-          border-radius: 10px;
-          background-color: #f5f0f0;
-        }
-        &::-webkit-scrollbar-thumb {
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-          border-radius: 12px;
-          background-color: #7E7E7E;
-        }
+  padding-bottom: 1em;
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f5f0f0;
+  }
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #f5f0f0;
+  }
+  &::-webkit-scrollbar-thumb {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #7e7e7e;
+  }
 }
-
 
 .custom-scroll {
   &::-webkit-scrollbar {
     height: 11px;
   }
-  
+
   &::-webkit-scrollbar-track {
     margin: 1.5rem;
     background: transparent;
   }
 
-  &::-webkit-scrollbar-thumb{ 
+  &::-webkit-scrollbar-thumb {
     width: 142px;
-    background-color: #7E7E7E;   
-    border-radius: 12px;     
+    background-color: #7e7e7e;
+    border-radius: 12px;
+
+    @media(max-width: 720px) {
+      background-color: transparent;
+    }
   }
 }

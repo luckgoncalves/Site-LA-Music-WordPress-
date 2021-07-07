@@ -1,7 +1,12 @@
 @import url("../global/styles.css");
 #banner-list-blog {
-  height: 490px;
   background-color: #000;
+}
+
+@media (min-width: 450px) {
+  #banner-list-blog {
+    height: 490px;
+  }
 }
 
 #banner-list-blog > div {
@@ -104,16 +109,20 @@
 
 #banner-list-blog > div .has-tags .tag-filter:hover {
   background-color: var(--red);
-  border: none;
+  border: 1px solid transparent;
 }
 
 #banner-list-blog > div .has-tags .tag-filter.active {
   background-color: var(--red);
-  border: none;
+  border: 1px solid transparent;
 }
 
 #banner-list-blog > div h2 {
   font-size: 4.61rem;
+}
+
+.blog-pagination {
+  display: none;
 }
 
 .cards-scroll .cards-blog {
@@ -127,8 +136,9 @@
 }
 
 .blog-category .name-category {
-  font-size: 2.76rem;
+  font-size: 2rem;
   font-weight: 600;
+  word-wrap: break-word;
 }
 
 .blog-category .name-category:first-letter {

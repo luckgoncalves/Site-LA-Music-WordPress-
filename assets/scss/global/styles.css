@@ -1,21 +1,32 @@
 @import url("../../fonts/stylesheet.css");
 :root {
-  font-size: 16px;
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   --primary: #000;
   --secondary: #262626;
   --footer: #111111;
-  --blue: #000A13;
-  --gray-ligth: #E5E5E5;
+  --blue: #000a13;
+  --gray-ligth: #e5e5e5;
   --white: #fff;
-  --gray: #7E7E7E;
-  --red: #FF2A2A;
-  --orange: #FF5656;
-  --green: #0FBB00;
+  --gray: #7e7e7e;
+  --red: #ff2a2a;
+  --orange: #ff5656;
+  --green: #0fbb00;
 }
 
 :root p {
   margin-bottom: 0;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
 }
 
 section {
@@ -63,7 +74,12 @@ section {
   background: var(--gray-ligth);
 }
 
-.bg-light h1, .bg-light h2, .bg-light h3, .bg-light p, .bg-light li, .bg-light strong {
+.bg-light h1,
+.bg-light h2,
+.bg-light h3,
+.bg-light p,
+.bg-light li,
+.bg-light strong {
   color: var(--primary);
 }
 
@@ -71,11 +87,21 @@ section {
   background-color: var(--primary) !important;
 }
 
-.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark p, .bg-dark li, .bg-dark strong {
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark p,
+.bg-dark li,
+.bg-dark strong {
   color: var(--white);
 }
 
-.bg-dark h1:hover, .bg-dark h2:hover, .bg-dark h3:hover, .bg-dark p:hover, .bg-dark li:hover, .bg-dark strong:hover {
+.bg-dark h1:hover,
+.bg-dark h2:hover,
+.bg-dark h3:hover,
+.bg-dark p:hover,
+.bg-dark li:hover,
+.bg-dark strong:hover {
   color: var(--white);
 }
 
@@ -88,11 +114,21 @@ section {
   color: var(--white);
 }
 
-.bg-green h1, .bg-green h2, .bg-green h3, .bg-green p, .bg-green li, .bg-green strong {
+.bg-green h1,
+.bg-green h2,
+.bg-green h3,
+.bg-green p,
+.bg-green li,
+.bg-green strong {
   color: var(--white);
 }
 
-.bg-green h1:hover, .bg-green h2:hover, .bg-green h3:hover, .bg-green p:hover, .bg-green li:hover, .bg-green strong:hover {
+.bg-green h1:hover,
+.bg-green h2:hover,
+.bg-green h3:hover,
+.bg-green p:hover,
+.bg-green li:hover,
+.bg-green strong:hover {
   color: var(--white);
 }
 
@@ -148,37 +184,37 @@ section {
 }
 
 body {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
 }
 
 body b {
-  font-family: 'AvenirBold';
+  font-family: "AvenirBold";
 }
 
 body .LoraBold {
-  font-family: 'LoraBold';
+  font-family: "LoraBold";
 }
 
 body .LoraRegular {
-  font-family: 'LoraRegular';
+  font-family: "LoraRegular";
 }
 
 body .avenirBold {
-  font-family: 'AvenirBold';
+  font-family: "AvenirBold";
 }
 
 body .avenirRegular {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   font-weight: normal;
 }
 
 body .avenirRegular-600 {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   font-weight: 600;
 }
 
 body .avenirRegular-500 {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   font-weight: 500;
 }
 
@@ -230,7 +266,7 @@ body #top-nav li:last-child {
 }
 
 body #top-nav li a {
-  font-family: 'AvenirBold';
+  font-family: "AvenirBold";
   font-size: 16px;
   color: var(--white);
   white-space: pre-wrap;
@@ -253,7 +289,7 @@ body #top-nav li .dropdown-menu {
 }
 
 body #top-nav li .dropdown-menu .dropdown-item {
-  font-family: 'AvenirRegular-500';
+  font-family: "AvenirRegular-500";
   font-size: 16px;
   margin: 10px 0;
 }
@@ -335,29 +371,29 @@ form p {
 
 form .wpcf7-text {
   border-radius: 0;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   height: 50px;
 }
 
 form .wpcf7-textarea {
   border-radius: 0;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   background-color: var(--red);
   color: var(--white);
   height: 50px;
 }
 
 .bodyPoliticas p {
-  font-family: 'avenirRegular';
+  font-family: "avenirRegular";
   line-height: 22px;
 }
 
 .bodyTermos p {
   text-align: justify;
-  font-family: 'avenirRegular';
+  font-family: "avenirRegular";
   line-height: 22px;
 }
 
@@ -409,7 +445,7 @@ footer #bot-nav li {
 }
 
 footer #bot-nav li a {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   font-weight: 600;
   font-size: 16px !important;
   color: var(--gray);
@@ -427,12 +463,12 @@ footer #bot-nav li .dropdown-menu {
 }
 
 footer #bot-nav li .dropdown-menu .dropdown-item {
-  font-family: 'AvenirRegular-500';
+  font-family: "AvenirRegular-500";
   font-size: 16px;
 }
 
 footer #bot-nav .current-menu-item a {
-  font-family: 'AvenirBold';
+  font-family: "AvenirBold";
   font-size: 16px !important;
   color: var(--white);
 }
@@ -450,7 +486,7 @@ footer #list-servicos li:first-child {
 }
 
 footer #list-servicos li a {
-  color: #7E7E7E;
+  color: #7e7e7e;
   font-size: 16px;
   line-height: 32px;
   text-decoration: none;
@@ -461,7 +497,7 @@ footer div p:nth-child(1) {
 }
 
 footer div p {
-  font-family: 'AvenirRegular';
+  font-family: "AvenirRegular";
   color: var(--gray);
 }
 
@@ -491,7 +527,7 @@ footer .address-footer {
   color: #444444;
   font-size: 0.875rem;
   line-height: 17px;
-  font-family: 'avenirRegular';
+  font-family: "avenirRegular";
   font-weight: 500;
 }
 
@@ -539,7 +575,7 @@ footer .address-footer {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  background-color: #7E7E7E;
+  background-color: #7e7e7e;
 }
 
 .custom-scroll::-webkit-scrollbar {
@@ -553,7 +589,13 @@ footer .address-footer {
 
 .custom-scroll::-webkit-scrollbar-thumb {
   width: 142px;
-  background-color: #7E7E7E;
+  background-color: #7e7e7e;
   border-radius: 12px;
+}
+
+@media (max-width: 720px) {
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

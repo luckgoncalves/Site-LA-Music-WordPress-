@@ -11,7 +11,7 @@
 
 <div id="primary" class="content-area">
     <div id="banner-list-blog" class="bg-black d-flex align-items-center justify-content-center pl-0">
-        <div class="row d-flex flex-column align-items-center justify-content-center">
+        <div class="row d-flex flex-column align-items-center justify-content-center" style="padding-top:80px;">
             
             <h2 class="absolute text-white text-uppercase text-center avenirBold">Viver de Música</h2>
 
@@ -36,6 +36,9 @@
             </div>
         </div>
     </div>
+
+	 
+	
     
       
     <?php if ($_SERVER['QUERY_STRING']) { ?>
@@ -57,27 +60,38 @@
                 
 
         } else { ?>
+		  		 <div id="containerCardBlog" class="mx-3 mx-sm-5" style="margin-top:-5%">
+					<div class="row d-flex mx-0 w-100 justify-content-center">
+								
+					<?php $args = array( 'posts_per_page' => 5, 'post_type' =>  'post', 'order' => 'DESC' ); 
+						query_posts($args);
+						while (have_posts()) : the_post();
+						$tipo_post = get_post_type();
+
+						// Include the page content template.
+						get_template_part('content', $tipo_post);
+						// End the loop.
+						endwhile; ?>
+					</div>
+				</div>
+
             <div id="containerCardBlog">
                 <div class="row d-flex mx-0 w-100 mt-5 justify-content-start">
                 <?php foreach( get_categories() as $category ) {
-                    $args = array( 'category' => $category->cat_ID, 'post_type' =>  'post' ); 
+                    $args = array( 'posts_per_page' => 3, 'category' => $category->cat_ID, 'post_type' =>  'post' ); 
                     $postslist = get_posts( $args );    
-                    
+                    query_posts($args);
                     echo 
-                        '<div class="d-flex w-100 custom-scroll" style="overflow-x: auto; padding-left:3.37rem;">
+                        '<div class="d-flex w-100 custom-scroll" style="padding-bottom: 24px;overflow-x: auto; padding-left:2rem;">
                             <div class="d-flex blog-category flex-column justify-content-center">
                                 <h2 class="name-category">'.strtolower($category->name).'</h2>
                                 <a class="link-category-posts" href="'.get_site_url().'/blog?cat='.$category->cat_ID.'" class="d-block">Ver mais<a/>
                             </div>
                             <div class="w-100 ">
                                 <div class="d-flex cards-scroll w-100">';
-                                    $qtd = 0;
                                     foreach ($postslist as $post) :  setup_postdata($post); 
-                                        if($qtd >= 3)
-                                            break;
-                                        
-                                        get_template_part('content', 'post');
-                                        $qtd++;
+													get_template_part('content', 'post');
+													$qtd++;
                                     endforeach;
                         echo    '</div>
                             </div>
@@ -86,16 +100,7 @@
             }
             ?>
             <?php
-            // while (have_posts()) : the_post();
-            //     $tipo_post = get_post_type();
-            //     // echo $tipo_post;
-            //     // Include the page content template.
-            //     set_query_var( 'my_var_name', 'dasd' );
-
-            //     get_template_part('content', $tipo_post, 'teste');
-            // // End the loop.
-            // endwhile;
-            // echo $template_content;
+       
             if (get_post_type() == 'post') :
                 echo '</div>';?>
                     <div class="blog-pagination mb-5">

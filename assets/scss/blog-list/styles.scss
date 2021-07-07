@@ -2,7 +2,10 @@
 
 
 #banner-list-blog {
-    height:490px; 
+    @media (min-width: 450px) {
+        height:490px; 
+    }
+
     background-color: #000;
     
     > div {
@@ -82,12 +85,12 @@
 
                 &:hover {
                   background-color: var(--red);  
-                  border: none;
+                  border: 1px solid transparent;
                 }
 
                 &.active {
                     background-color: var(--red);  
-                    border: none;
+                    border: 1px solid transparent;
                 }
             }
         }
@@ -97,8 +100,12 @@
         }
 
     }
+
 }
 
+.blog-pagination {
+    display: none;
+}
 .cards-scroll {
     .cards-blog {
         margin-right: 20px;
@@ -111,8 +118,10 @@
     max-width: 212px;
 
     .name-category {
-        font-size:2.76rem;
+        font-size:2rem;
         font-weight: 600;
+
+        word-wrap: break-word;
 
         &:first-letter { text-transform: capitalize; }
     }

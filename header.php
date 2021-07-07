@@ -86,6 +86,7 @@ $pageId     = $wp_query->post->ID;
 
         gtag('config', 'UA-143795586-1');
     </script>
+    <link rel="stylesheet" href="/wp-content/themes/la_music/assets/js/analytics.js" />
 
 <body style="background-color: #E5E5E5;">
   <header class="header-menu w-100" style="position:fixed;z-index:9999">

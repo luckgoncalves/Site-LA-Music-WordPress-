@@ -147,3 +147,4 @@
 <script src="<?= $base_url ?>/assets/js/toggleMenu.js"></script>
 <script src="<?= $base_url ?>/assets/js/filter.js"></script>
 <script src="<?= $base_url ?>/assets/js/auth.js"></script>
+<script src="<?= $base_url ?>/assets/js/slide.js"></script>
